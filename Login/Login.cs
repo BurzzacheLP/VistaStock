@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Login
 {
@@ -20,8 +21,15 @@ namespace Login
 
         #region Cosas para arrastrar la interfaz
         // Yo se q no queria q copie el codigo este pero me parece util
+        // Copiado de https://stackoverflow.com/a/19491283
 
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
 
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
 
         #endregion
 
@@ -91,5 +99,19 @@ namespace Login
             txtPass.UseSystemPasswordChar = false;
         }
         #endregion
+
+        private void TopPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void lblOlvido_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

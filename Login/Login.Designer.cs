@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
@@ -41,16 +42,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblErrorPass = new System.Windows.Forms.Label();
             this.lblErrorUsr = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.TopPanel = new System.Windows.Forms.Panel();
+            this.lblOlvido = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.TopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,14 +64,24 @@
             this.panel1.Size = new System.Drawing.Size(274, 136);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(105, 28);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(75, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Dubai Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.label1.Location = new System.Drawing.Point(108, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 36);
+            this.label1.Size = new System.Drawing.Size(70, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             // 
@@ -103,7 +114,7 @@
             this.txtUser.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtUser.Location = new System.Drawing.Point(6, 23);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(163, 24);
+            this.txtUser.Size = new System.Drawing.Size(163, 22);
             this.txtUser.TabIndex = 1;
             this.txtUser.Text = "Usuario123";
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
@@ -114,7 +125,7 @@
             this.txtPass.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtPass.Location = new System.Drawing.Point(6, 23);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(137, 24);
+            this.txtPass.Size = new System.Drawing.Size(137, 22);
             this.txtPass.TabIndex = 2;
             this.txtPass.Text = "Contraseña456";
             this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
@@ -132,7 +143,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtUser);
-            this.groupBox1.Font = new System.Drawing.Font("Meiryo UI", 9.75F);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox1.Location = new System.Drawing.Point(60, 142);
             this.groupBox1.Name = "groupBox1";
@@ -145,7 +156,7 @@
             // 
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.txtPass);
-            this.groupBox2.Font = new System.Drawing.Font("Meiryo UI", 9.75F);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox2.Location = new System.Drawing.Point(60, 222);
             this.groupBox2.Name = "groupBox2";
@@ -188,26 +199,28 @@
             this.lblErrorUsr.Text = "Error";
             this.lblErrorUsr.Visible = false;
             // 
-            // panel2
+            // TopPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(19)))), ((int)(((byte)(72)))));
-            this.panel2.Controls.Add(this.btnCerrar);
-            this.panel2.Controls.Add(this.btnMinimizar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(274, 22);
-            this.panel2.TabIndex = 10;
+            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(19)))), ((int)(((byte)(72)))));
+            this.TopPanel.Controls.Add(this.btnCerrar);
+            this.TopPanel.Controls.Add(this.btnMinimizar);
+            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPanel.Location = new System.Drawing.Point(0, 0);
+            this.TopPanel.Name = "TopPanel";
+            this.TopPanel.Size = new System.Drawing.Size(274, 22);
+            this.TopPanel.TabIndex = 10;
+            this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
             // 
-            // pictureBox2
+            // lblOlvido
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(105, 28);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 55);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.lblOlvido.AutoSize = true;
+            this.lblOlvido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(70)))), ((int)(((byte)(255)))));
+            this.lblOlvido.Location = new System.Drawing.Point(84, 332);
+            this.lblOlvido.Name = "lblOlvido";
+            this.lblOlvido.Size = new System.Drawing.Size(119, 13);
+            this.lblOlvido.TabIndex = 11;
+            this.lblOlvido.Text = "¿Olvido su contraseña?";
+            this.lblOlvido.Click += new System.EventHandler(this.lblOlvido_Click);
             // 
             // Login
             // 
@@ -216,12 +229,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(274, 354);
             this.ControlBox = false;
+            this.Controls.Add(this.lblOlvido);
             this.Controls.Add(this.lblErrorPass);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblErrorUsr);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -231,6 +245,7 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -238,8 +253,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.TopPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,8 +273,9 @@
         private System.Windows.Forms.Label lblErrorPass;
         private System.Windows.Forms.Label lblErrorUsr;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel TopPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblOlvido;
     }
 }
 
