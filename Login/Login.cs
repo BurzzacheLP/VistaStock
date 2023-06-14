@@ -15,7 +15,14 @@ namespace Login
         public Login()
         {
             InitializeComponent();
+            txtPass.UseSystemPasswordChar = false;
         }
+
+        #region Cosas para arrastrar la interfaz
+        // Yo se q no queria q copie el codigo este pero me parece util
+
+
+        #endregion
 
         #region Controles de Ventana
         private void btnCerrar_Click(object sender, EventArgs e)
