@@ -15,11 +15,12 @@ namespace Login
         public Login()
         {
             InitializeComponent();
-            txtPass.UseSystemPasswordChar = false;
+            //txtPass.UseSystemPasswordChar = false;
         }
 
         #region Cosas para arrastrar la interfaz
         // Yo se q no queria q copie el codigo este pero me parece util
+
 
 
         #endregion
@@ -35,7 +36,6 @@ namespace Login
             this.WindowState = FormWindowState.Minimized;
         }
         #endregion
-
 
         #region TextBoxes
         private void txtUser_Enter(object sender, EventArgs e)
@@ -77,8 +77,19 @@ namespace Login
             }
         }
 
+
         #endregion
 
-        
+        #region Mostrar Contraseña
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPass.UseSystemPasswordChar = true;
+        }
+
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPass.UseSystemPasswordChar = false;
+        }
+        #endregion
     }
 }
