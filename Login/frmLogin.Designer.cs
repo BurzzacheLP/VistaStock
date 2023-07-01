@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class Login
+    partial class frmLogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,6 +43,7 @@
             this.lblErrorPass = new System.Windows.Forms.Label();
             this.lblErrorUsr = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.lblOlvido = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -202,6 +203,7 @@
             // TopPanel
             // 
             this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(19)))), ((int)(((byte)(72)))));
+            this.TopPanel.Controls.Add(this.button2);
             this.TopPanel.Controls.Add(this.btnCerrar);
             this.TopPanel.Controls.Add(this.btnMinimizar);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -210,6 +212,17 @@
             this.TopPanel.Size = new System.Drawing.Size(274, 22);
             this.TopPanel.TabIndex = 10;
             this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+            this.button2.Location = new System.Drawing.Point(4, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(71, 18);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Register";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblOlvido
             // 
@@ -276,6 +289,7 @@
         private System.Windows.Forms.Panel TopPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblOlvido;
+        private System.Windows.Forms.Button button2;
     }
 }
 

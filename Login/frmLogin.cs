@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 namespace Login
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
             //txtPass.UseSystemPasswordChar = false;
@@ -48,8 +42,11 @@ namespace Login
         #region TextBoxes
         private void txtUser_Enter(object sender, EventArgs e)
         {
-            txtUser.Clear();
             txtUser.ForeColor = Color.FromArgb(90, 92, 230);
+            if (txtUser.Text == "Usuario123")
+            {
+                txtUser.Clear();
+            }
         }
 
         private void txtUser_Leave(object sender, EventArgs e)
@@ -67,8 +64,11 @@ namespace Login
 
         private void txtPass_Enter(object sender, EventArgs e)
         {
-            txtPass.Clear();
             txtPass.ForeColor = Color.FromArgb(90, 92, 230);
+            if (txtPass.Text == "Contraseña456")
+            {
+                txtPass.Clear();
+            }
         }
 
         private void txtPass_Leave(object sender, EventArgs e)
@@ -112,6 +112,14 @@ namespace Login
         private void lblOlvido_Click(object sender, EventArgs e)
         {
             this.Hide();
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmRegister register = new frmRegister();
+            register.Show();
         }
     }
 }
