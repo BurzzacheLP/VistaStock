@@ -25,12 +25,18 @@ namespace Login
 
         }
 
+        private void cerrarSubForm(Form frmhijo)
+        {
+
+        }
+
         #region Variables
 
         private Panel subMenu;
         private Form FormActual;
 
         #endregion 
+
         #region Cosas para arrastrar la interfaz
         // Yo se q no queria q copie el codigo este pero me parece util
         // Copiado de https://stackoverflow.com/a/19491283
@@ -66,7 +72,7 @@ namespace Login
 
         private void lblUsuarios_Click(object sender, EventArgs e)
         {
-            abrirSubForm(new );
+            abrirSubForm(new frmGridUsuarios());
         }
 
         private void lblInicio_Click(object sender, EventArgs e)

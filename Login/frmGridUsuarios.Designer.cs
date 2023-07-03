@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class DataGridForm
+    partial class frmGridUsuarios
     {
         /// <summary>
         /// Required designer variable.

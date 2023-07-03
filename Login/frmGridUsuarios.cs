@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class DataGridForm : Form
+    public partial class frmGridUsuarios : Form
     {
-        public DataGridForm()
+        public frmGridUsuarios()
         {
             InitializeComponent();
         }

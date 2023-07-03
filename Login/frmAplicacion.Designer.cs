@@ -170,7 +170,7 @@
             // 
             this.lblInicio.AutoSize = true;
             this.lblInicio.ForeColor = System.Drawing.Color.White;
-            this.lblInicio.Location = new System.Drawing.Point(27, 125);
+            this.lblInicio.Location = new System.Drawing.Point(56, 128);
             this.lblInicio.Name = "lblInicio";
             this.lblInicio.Size = new System.Drawing.Size(32, 13);
             this.lblInicio.TabIndex = 2;
