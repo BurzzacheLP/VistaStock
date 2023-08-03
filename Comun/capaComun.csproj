@@ -7,7 +7,7 @@
     <ProjectGuid>{5CBC99DC-8B19-44FD-8A42-990599141CC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Comun</RootNamespace>
+    <RootNamespace>capaComun</RootNamespace>
     <AssemblyName>capaComun</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

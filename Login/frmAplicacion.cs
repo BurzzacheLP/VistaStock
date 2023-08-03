@@ -19,20 +19,53 @@ namespace Login
             }
 
             FormActual = frmhijo;
-            frmhijo.TopLevel = false;
             frmhijo.Show();
             frmhijo.BringToFront();
 
+            frmhijo.TopLevel = false;
+            frmhijo.FormBorderStyle = FormBorderStyle.None;
+            frmhijo.Dock = DockStyle.Fill;
+
+            lblTitulo.Tag = frmhijo;
+            lblTitulo.Text = frmhijo.Text;
+
         }
 
-        private void cerrarSubForm(Form frmhijo)
+        private void abrirCerrarSubMenu(Panel submenu)
         {
+            if (!submenu.Visible)
+            {
+                subMenuActual = submenu;
+                cerrarSubMenu();
 
+                if (submenu.Visible == true)
+                {
+                    submenu.Visible = false;
+                    submenu.Enabled = false;
+                }
+                else
+                {
+                    submenu.Visible = true;
+                    submenu.Enabled = true;
+                }
+            }
+            else
+            {
+                submenu.Visible = false;
+            }
+        }
+
+        private void cerrarSubMenu()
+        {
+            if (subMenuActual != null)
+            {
+                subMenuActual.Visible = false;
+            }
         }
 
         #region Variables
 
-        private Panel subMenu;
+        private Panel subMenuActual;
         private Form FormActual;
 
         #endregion 

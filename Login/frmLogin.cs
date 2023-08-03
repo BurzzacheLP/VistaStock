@@ -121,5 +121,10 @@ namespace Login
             frmRegister register = new frmRegister();
             register.Show();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -68,10 +68,11 @@ namespace Login
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnAbrirLogin_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
-            frmLogin login= new frmLogin();
+            frmLogin login = new frmLogin();
             login.Show();
         }
     }

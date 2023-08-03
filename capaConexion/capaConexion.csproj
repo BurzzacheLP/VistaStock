@@ -45,11 +45,17 @@
     <Compile Include="ejecutarConsultasSCP.cs" />
     <Compile Include="ejecutarQuery.cs" />
     <Compile Include="conexionBD.cs" />
+    <Compile Include="Login\BloquearUsuario.cs" />
+    <Compile Include="Login\BuscarUser.cs" />
+    <Compile Include="Login\ConectarUsuario.cs" />
+    <Compile Include="Login\ConsultarLogueos.cs" />
+    <Compile Include="Login\ModificarPass.cs" />
+    <Compile Include="Login\Permisos.cs" />
+    <Compile Include="Login\TraerPersona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LlenarCombos\" />
-    <Folder Include="Login\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Comun\capaComun.csproj">
