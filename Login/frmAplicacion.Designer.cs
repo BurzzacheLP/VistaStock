@@ -61,6 +61,7 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panelWorkspace = new System.Windows.Forms.Panel();
+            this.btnAdministrador = new System.Windows.Forms.Button();
             this.sidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.TopPanel.SuspendLayout();
@@ -224,6 +225,7 @@
             // TopPanel
             // 
             this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(19)))), ((int)(((byte)(72)))));
+            this.TopPanel.Controls.Add(this.btnAdministrador);
             this.TopPanel.Controls.Add(this.lblTitulo);
             this.TopPanel.Controls.Add(this.button2);
             this.TopPanel.Controls.Add(this.panel1);
@@ -437,6 +439,16 @@
             this.panelWorkspace.Size = new System.Drawing.Size(935, 575);
             this.panelWorkspace.TabIndex = 14;
             // 
+            // btnAdministrador
+            // 
+            this.btnAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+            this.btnAdministrador.Location = new System.Drawing.Point(78, 2);
+            this.btnAdministrador.Name = "btnAdministrador";
+            this.btnAdministrador.Size = new System.Drawing.Size(71, 18);
+            this.btnAdministrador.TabIndex = 15;
+            this.btnAdministrador.Text = "Administrador";
+            this.btnAdministrador.UseVisualStyleBackColor = true;
+            // 
             // frmAplicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,6 +509,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnAdministrador;
     }
 }
 
