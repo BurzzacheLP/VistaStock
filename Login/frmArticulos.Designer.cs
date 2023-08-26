@@ -239,7 +239,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 70);
+            this.label8.Location = new System.Drawing.Point(7, 68);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 13);
             this.label8.TabIndex = 10;
@@ -248,14 +248,14 @@
             // comboComprobante
             // 
             this.comboComprobante.FormattingEnabled = true;
-            this.comboComprobante.Location = new System.Drawing.Point(10, 86);
+            this.comboComprobante.Location = new System.Drawing.Point(10, 84);
             this.comboComprobante.Name = "comboComprobante";
             this.comboComprobante.Size = new System.Drawing.Size(100, 21);
             this.comboComprobante.TabIndex = 9;
             // 
             // txtProveedorId
             // 
-            this.txtProveedorId.Location = new System.Drawing.Point(10, 137);
+            this.txtProveedorId.Location = new System.Drawing.Point(10, 135);
             this.txtProveedorId.Name = "txtProveedorId";
             this.txtProveedorId.Size = new System.Drawing.Size(100, 20);
             this.txtProveedorId.TabIndex = 3;
@@ -263,7 +263,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 120);
+            this.label5.Location = new System.Drawing.Point(7, 118);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 2;
@@ -271,7 +271,7 @@
             // 
             // txtIdIngreso
             // 
-            this.txtIdIngreso.Location = new System.Drawing.Point(10, 36);
+            this.txtIdIngreso.Location = new System.Drawing.Point(10, 34);
             this.txtIdIngreso.Name = "txtIdIngreso";
             this.txtIdIngreso.Size = new System.Drawing.Size(100, 20);
             this.txtIdIngreso.TabIndex = 1;
@@ -279,7 +279,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 20);
+            this.label4.Location = new System.Drawing.Point(7, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 0;
@@ -420,7 +420,7 @@
             // btnBuscarArticulo
             // 
             this.btnBuscarArticulo.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarArticulo.Image")));
-            this.btnBuscarArticulo.Location = new System.Drawing.Point(210, 86);
+            this.btnBuscarArticulo.Location = new System.Drawing.Point(10, 163);
             this.btnBuscarArticulo.Name = "btnBuscarArticulo";
             this.btnBuscarArticulo.Size = new System.Drawing.Size(40, 40);
             this.btnBuscarArticulo.TabIndex = 18;
@@ -428,16 +428,16 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(9, 187);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 231);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 210);
+            this.pictureBox1.Size = new System.Drawing.Size(205, 205);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 168);
+            this.label3.Location = new System.Drawing.Point(7, 212);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 12;
@@ -447,7 +447,7 @@
             // 
             this.groupBox5.Controls.Add(this.btnQuitar);
             this.groupBox5.Controls.Add(this.btnAgregar);
-            this.groupBox5.Location = new System.Drawing.Point(264, 209);
+            this.groupBox5.Location = new System.Drawing.Point(252, 250);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(74, 166);
             this.groupBox5.TabIndex = 23;
