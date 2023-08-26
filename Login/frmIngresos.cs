@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Login
+namespace Vista
 {
-    public partial class frmGridUsuarios : Form
+    public partial class frmIngresos : Form
     {
-        public frmGridUsuarios()
+        public frmIngresos()
         {
             InitializeComponent();
         }

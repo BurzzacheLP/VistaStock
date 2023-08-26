@@ -432,9 +432,9 @@
             // panelWorkspace
             // 
             this.panelWorkspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelWorkspace.Location = new System.Drawing.Point(162, 30);
+            this.panelWorkspace.Location = new System.Drawing.Point(163, 31);
             this.panelWorkspace.Name = "panelWorkspace";
-            this.panelWorkspace.Size = new System.Drawing.Size(934, 577);
+            this.panelWorkspace.Size = new System.Drawing.Size(935, 575);
             this.panelWorkspace.TabIndex = 14;
             // 
             // frmAplicacion

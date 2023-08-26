@@ -105,7 +105,7 @@ namespace Login
 
         private void lblUsuarios_Click(object sender, EventArgs e)
         {
-            abrirSubForm(new frmGridUsuarios());
+            //abrirSubForm();
         }
 
         private void lblInicio_Click(object sender, EventArgs e)
