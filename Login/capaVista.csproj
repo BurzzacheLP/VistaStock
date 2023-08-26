@@ -107,19 +107,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\capaServicios\capaServicios.csproj">
-      <Project>{cd1e288a-4940-45df-bdb9-ef6bcc270197}</Project>
-      <Name>capaServicios</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Comun\capaComun.csproj">
-      <Project>{5cbc99dc-8b19-44fd-8a42-990599141cc3}</Project>
-      <Name>capaComun</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Logica\capaLogica.csproj">
-      <Project>{d7534a92-3d71-4dc2-a83c-af10772c3c32}</Project>
-      <Name>capaLogica</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAplicacion));
             this.sidePanel = new System.Windows.Forms.Panel();
+            this.lblInicio = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.lblDocentes = new System.Windows.Forms.Label();
+            this.lblVentas = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblPresentismo = new System.Windows.Forms.Label();
-            this.lblCalificaciones = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblAlumnos = new System.Windows.Forms.Label();
-            this.lblUsuarios = new System.Windows.Forms.Label();
+            this.lblConsulReportes = new System.Windows.Forms.Label();
+            this.lblMantenimiento = new System.Windows.Forms.Label();
+            this.lblCompras = new System.Windows.Forms.Label();
+            this.lblAlmacen = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblInicio = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblUserName = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
@@ -73,49 +73,61 @@
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(24)))), ((int)(((byte)(85)))));
+            this.sidePanel.Controls.Add(this.lblInicio);
             this.sidePanel.Controls.Add(this.lblFecha);
-            this.sidePanel.Controls.Add(this.lblDocentes);
+            this.sidePanel.Controls.Add(this.lblVentas);
             this.sidePanel.Controls.Add(this.lblHora);
             this.sidePanel.Controls.Add(this.lblPresentismo);
-            this.sidePanel.Controls.Add(this.lblCalificaciones);
-            this.sidePanel.Controls.Add(this.label5);
-            this.sidePanel.Controls.Add(this.lblAlumnos);
-            this.sidePanel.Controls.Add(this.lblUsuarios);
+            this.sidePanel.Controls.Add(this.lblConsulReportes);
+            this.sidePanel.Controls.Add(this.lblMantenimiento);
+            this.sidePanel.Controls.Add(this.lblCompras);
+            this.sidePanel.Controls.Add(this.lblAlmacen);
             this.sidePanel.Controls.Add(this.label2);
-            this.sidePanel.Controls.Add(this.lblInicio);
             this.sidePanel.Controls.Add(this.pictureBox2);
             this.sidePanel.Controls.Add(this.lblUserName);
             this.sidePanel.Location = new System.Drawing.Point(0, 21);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(149, 503);
+            this.sidePanel.Size = new System.Drawing.Size(149, 596);
             this.sidePanel.TabIndex = 12;
+            // 
+            // lblInicio
+            // 
+            this.lblInicio.AutoSize = true;
+            this.lblInicio.Font = new System.Drawing.Font("Nirmala UI", 11F);
+            this.lblInicio.ForeColor = System.Drawing.Color.White;
+            this.lblInicio.Location = new System.Drawing.Point(4, 57);
+            this.lblInicio.Name = "lblInicio";
+            this.lblInicio.Size = new System.Drawing.Size(45, 20);
+            this.lblInicio.TabIndex = 2;
+            this.lblInicio.Text = "Inicio";
+            this.lblInicio.Click += new System.EventHandler(this.lblInicio_Click);
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.ForeColor = System.Drawing.Color.White;
-            this.lblFecha.Location = new System.Drawing.Point(27, 94);
+            this.lblFecha.Location = new System.Drawing.Point(5, 38);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(91, 13);
             this.lblFecha.TabIndex = 13;
             this.lblFecha.Text = "DD / MM / YYYY";
             // 
-            // lblDocentes
+            // lblVentas
             // 
-            this.lblDocentes.AutoSize = true;
-            this.lblDocentes.Font = new System.Drawing.Font("Nirmala UI", 11F);
-            this.lblDocentes.ForeColor = System.Drawing.Color.White;
-            this.lblDocentes.Location = new System.Drawing.Point(37, 284);
-            this.lblDocentes.Name = "lblDocentes";
-            this.lblDocentes.Size = new System.Drawing.Size(71, 20);
-            this.lblDocentes.TabIndex = 10;
-            this.lblDocentes.Text = "Docentes";
+            this.lblVentas.AutoSize = true;
+            this.lblVentas.Font = new System.Drawing.Font("Nirmala UI", 11F);
+            this.lblVentas.ForeColor = System.Drawing.Color.White;
+            this.lblVentas.Location = new System.Drawing.Point(12, 198);
+            this.lblVentas.Name = "lblVentas";
+            this.lblVentas.Size = new System.Drawing.Size(52, 20);
+            this.lblVentas.TabIndex = 10;
+            this.lblVentas.Text = "Ventas";
             // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
             this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(48, 77);
+            this.lblHora.Location = new System.Drawing.Point(97, 38);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(49, 13);
             this.lblHora.TabIndex = 12;
@@ -126,86 +138,74 @@
             this.lblPresentismo.AutoSize = true;
             this.lblPresentismo.Font = new System.Drawing.Font("Nirmala UI", 11F);
             this.lblPresentismo.ForeColor = System.Drawing.Color.White;
-            this.lblPresentismo.Location = new System.Drawing.Point(28, 374);
+            this.lblPresentismo.Location = new System.Drawing.Point(8, 318);
             this.lblPresentismo.Name = "lblPresentismo";
             this.lblPresentismo.Size = new System.Drawing.Size(89, 20);
             this.lblPresentismo.TabIndex = 8;
             this.lblPresentismo.Text = "Presentismo";
             // 
-            // lblCalificaciones
+            // lblConsulReportes
             // 
-            this.lblCalificaciones.AutoSize = true;
-            this.lblCalificaciones.Font = new System.Drawing.Font("Nirmala UI", 11F);
-            this.lblCalificaciones.ForeColor = System.Drawing.Color.White;
-            this.lblCalificaciones.Location = new System.Drawing.Point(22, 351);
-            this.lblCalificaciones.Name = "lblCalificaciones";
-            this.lblCalificaciones.Size = new System.Drawing.Size(100, 20);
-            this.lblCalificaciones.TabIndex = 7;
-            this.lblCalificaciones.Text = "Calificaciones";
+            this.lblConsulReportes.AutoSize = true;
+            this.lblConsulReportes.Font = new System.Drawing.Font("Nirmala UI", 11F);
+            this.lblConsulReportes.ForeColor = System.Drawing.Color.White;
+            this.lblConsulReportes.Location = new System.Drawing.Point(12, 258);
+            this.lblConsulReportes.Name = "lblConsulReportes";
+            this.lblConsulReportes.Size = new System.Drawing.Size(146, 20);
+            this.lblConsulReportes.TabIndex = 7;
+            this.lblConsulReportes.Text = "Consultas y Reportes";
             // 
-            // label5
+            // lblMantenimiento
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 11F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(37, 328);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Docentes";
+            this.lblMantenimiento.AutoSize = true;
+            this.lblMantenimiento.Font = new System.Drawing.Font("Nirmala UI", 11F);
+            this.lblMantenimiento.ForeColor = System.Drawing.Color.White;
+            this.lblMantenimiento.Location = new System.Drawing.Point(12, 228);
+            this.lblMantenimiento.Name = "lblMantenimiento";
+            this.lblMantenimiento.Size = new System.Drawing.Size(110, 20);
+            this.lblMantenimiento.TabIndex = 6;
+            this.lblMantenimiento.Text = "Mantenimiento";
             // 
-            // lblAlumnos
+            // lblCompras
             // 
-            this.lblAlumnos.AutoSize = true;
-            this.lblAlumnos.Font = new System.Drawing.Font("Nirmala UI", 11F);
-            this.lblAlumnos.ForeColor = System.Drawing.Color.White;
-            this.lblAlumnos.Location = new System.Drawing.Point(39, 257);
-            this.lblAlumnos.Name = "lblAlumnos";
-            this.lblAlumnos.Size = new System.Drawing.Size(67, 20);
-            this.lblAlumnos.TabIndex = 5;
-            this.lblAlumnos.Text = "Alumnos";
+            this.lblCompras.AutoSize = true;
+            this.lblCompras.Font = new System.Drawing.Font("Nirmala UI", 11F);
+            this.lblCompras.ForeColor = System.Drawing.Color.White;
+            this.lblCompras.Location = new System.Drawing.Point(12, 168);
+            this.lblCompras.Name = "lblCompras";
+            this.lblCompras.Size = new System.Drawing.Size(68, 20);
+            this.lblCompras.TabIndex = 5;
+            this.lblCompras.Text = "Compras";
             // 
-            // lblUsuarios
+            // lblAlmacen
             // 
-            this.lblUsuarios.AutoSize = true;
-            this.lblUsuarios.Font = new System.Drawing.Font("Nirmala UI", 11F);
-            this.lblUsuarios.ForeColor = System.Drawing.Color.White;
-            this.lblUsuarios.Location = new System.Drawing.Point(40, 231);
-            this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(65, 20);
-            this.lblUsuarios.TabIndex = 4;
-            this.lblUsuarios.Text = "Usuarios";
-            this.lblUsuarios.Click += new System.EventHandler(this.lblUsuarios_Click);
+            this.lblAlmacen.AutoSize = true;
+            this.lblAlmacen.Font = new System.Drawing.Font("Nirmala UI", 11F);
+            this.lblAlmacen.ForeColor = System.Drawing.Color.White;
+            this.lblAlmacen.Location = new System.Drawing.Point(12, 138);
+            this.lblAlmacen.Name = "lblAlmacen";
+            this.lblAlmacen.Size = new System.Drawing.Size(67, 20);
+            this.lblAlmacen.TabIndex = 4;
+            this.lblAlmacen.Text = "Almacen";
+            this.lblAlmacen.Click += new System.EventHandler(this.lblUsuarios_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 11F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 202);
+            this.label2.Location = new System.Drawing.Point(4, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Mantenimiento";
             // 
-            // lblInicio
-            // 
-            this.lblInicio.AutoSize = true;
-            this.lblInicio.Font = new System.Drawing.Font("Nirmala UI", 11F);
-            this.lblInicio.ForeColor = System.Drawing.Color.White;
-            this.lblInicio.Location = new System.Drawing.Point(50, 128);
-            this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(45, 20);
-            this.lblInicio.TabIndex = 2;
-            this.lblInicio.Text = "Inicio";
-            this.lblInicio.Click += new System.EventHandler(this.lblInicio_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(46, 7);
+            this.pictureBox2.Location = new System.Drawing.Point(6, 7);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(53, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(28, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -215,7 +215,7 @@
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.lblUserName.Location = new System.Drawing.Point(26, 50);
+            this.lblUserName.Location = new System.Drawing.Point(40, 7);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(93, 25);
             this.lblUserName.TabIndex = 0;
@@ -232,7 +232,7 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(936, 22);
+            this.TopPanel.Size = new System.Drawing.Size(1110, 22);
             this.TopPanel.TabIndex = 13;
             this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
             // 
@@ -240,7 +240,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(451, 4);
+            this.lblTitulo.Location = new System.Drawing.Point(539, 5);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(32, 13);
             this.lblTitulo.TabIndex = 14;
@@ -411,9 +411,9 @@
             // 
             this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(906, 2);
+            this.btnCerrar.Location = new System.Drawing.Point(1086, 3);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(20, 15);
+            this.btnCerrar.Size = new System.Drawing.Size(21, 15);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.TabStop = false;
@@ -422,27 +422,27 @@
             // 
             this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(881, 2);
+            this.btnMinimizar.Location = new System.Drawing.Point(1060, 3);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(20, 15);
+            this.btnMinimizar.Size = new System.Drawing.Size(21, 15);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 2;
             this.btnMinimizar.TabStop = false;
             // 
             // panelWorkspace
             // 
-            this.panelWorkspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.panelWorkspace.Location = new System.Drawing.Point(171, 31);
+            this.panelWorkspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panelWorkspace.Location = new System.Drawing.Point(162, 30);
             this.panelWorkspace.Name = "panelWorkspace";
-            this.panelWorkspace.Size = new System.Drawing.Size(750, 484);
+            this.panelWorkspace.Size = new System.Drawing.Size(934, 577);
             this.panelWorkspace.TabIndex = 14;
             // 
             // frmAplicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(936, 524);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.ClientSize = new System.Drawing.Size(1110, 615);
             this.Controls.Add(this.panelWorkspace);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.sidePanel);
@@ -471,12 +471,12 @@
         private System.Windows.Forms.Panel TopPanel;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.Label lblDocentes;
+        private System.Windows.Forms.Label lblVentas;
         private System.Windows.Forms.Label lblPresentismo;
-        private System.Windows.Forms.Label lblCalificaciones;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblAlumnos;
-        private System.Windows.Forms.Label lblUsuarios;
+        private System.Windows.Forms.Label lblConsulReportes;
+        private System.Windows.Forms.Label lblMantenimiento;
+        private System.Windows.Forms.Label lblCompras;
+        private System.Windows.Forms.Label lblAlmacen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblInicio;
         private System.Windows.Forms.Label lblHora;
