@@ -44,10 +44,9 @@
             this.txtArticuloId = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboComprobante = new System.Windows.Forms.ComboBox();
-            this.txtProveedorId = new System.Windows.Forms.TextBox();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtIdIngreso = new System.Windows.Forms.TextBox();
+            this.txtCategoriaId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,14 +61,15 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.btnBuscarArticulo = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBuscarCategoria = new System.Windows.Forms.Button();
+            this.imgPresentacion = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnQuitar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.cboPresentacion = new System.Windows.Forms.ComboBox();
             this.tabIngresos.SuspendLayout();
             this.tabListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListado)).BeginInit();
@@ -79,7 +79,7 @@
             this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPresentacion)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -218,15 +218,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cboPresentacion);
             this.groupBox1.Controls.Add(this.groupBox5);
-            this.groupBox1.Controls.Add(this.btnBuscarArticulo);
+            this.groupBox1.Controls.Add(this.btnBuscarCategoria);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.imgPresentacion);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.comboComprobante);
-            this.groupBox1.Controls.Add(this.txtProveedorId);
+            this.groupBox1.Controls.Add(this.cboCategoria);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtIdIngreso);
+            this.groupBox1.Controls.Add(this.txtCategoriaId);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.groupBox1.Location = new System.Drawing.Point(443, 6);
@@ -234,7 +234,7 @@
             this.groupBox1.Size = new System.Drawing.Size(351, 449);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Proveedor";
+            this.groupBox1.Text = "Categoria";
             // 
             // label8
             // 
@@ -245,20 +245,13 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Categoria";
             // 
-            // comboComprobante
+            // cboCategoria
             // 
-            this.comboComprobante.FormattingEnabled = true;
-            this.comboComprobante.Location = new System.Drawing.Point(10, 84);
-            this.comboComprobante.Name = "comboComprobante";
-            this.comboComprobante.Size = new System.Drawing.Size(100, 21);
-            this.comboComprobante.TabIndex = 9;
-            // 
-            // txtProveedorId
-            // 
-            this.txtProveedorId.Location = new System.Drawing.Point(10, 135);
-            this.txtProveedorId.Name = "txtProveedorId";
-            this.txtProveedorId.Size = new System.Drawing.Size(100, 20);
-            this.txtProveedorId.TabIndex = 3;
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(10, 84);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(100, 21);
+            this.cboCategoria.TabIndex = 9;
             // 
             // label5
             // 
@@ -269,12 +262,12 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Presentacion";
             // 
-            // txtIdIngreso
+            // txtCategoriaId
             // 
-            this.txtIdIngreso.Location = new System.Drawing.Point(10, 34);
-            this.txtIdIngreso.Name = "txtIdIngreso";
-            this.txtIdIngreso.Size = new System.Drawing.Size(100, 20);
-            this.txtIdIngreso.TabIndex = 1;
+            this.txtCategoriaId.Location = new System.Drawing.Point(10, 34);
+            this.txtCategoriaId.Name = "txtCategoriaId";
+            this.txtCategoriaId.Size = new System.Drawing.Size(100, 20);
+            this.txtCategoriaId.TabIndex = 1;
             // 
             // label4
             // 
@@ -417,22 +410,22 @@
             this.btnEditar.TabIndex = 22;
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
-            // btnBuscarArticulo
+            // btnBuscarCategoria
             // 
-            this.btnBuscarArticulo.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarArticulo.Image")));
-            this.btnBuscarArticulo.Location = new System.Drawing.Point(10, 163);
-            this.btnBuscarArticulo.Name = "btnBuscarArticulo";
-            this.btnBuscarArticulo.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarArticulo.TabIndex = 18;
-            this.btnBuscarArticulo.UseVisualStyleBackColor = true;
+            this.btnBuscarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCategoria.Image")));
+            this.btnBuscarCategoria.Location = new System.Drawing.Point(10, 163);
+            this.btnBuscarCategoria.Name = "btnBuscarCategoria";
+            this.btnBuscarCategoria.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarCategoria.TabIndex = 18;
+            this.btnBuscarCategoria.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // imgPresentacion
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(10, 231);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 205);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.imgPresentacion.Location = new System.Drawing.Point(10, 231);
+            this.imgPresentacion.Name = "imgPresentacion";
+            this.imgPresentacion.Size = new System.Drawing.Size(205, 205);
+            this.imgPresentacion.TabIndex = 11;
+            this.imgPresentacion.TabStop = false;
             // 
             // label3
             // 
@@ -491,6 +484,14 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "0.0";
             // 
+            // cboPresentacion
+            // 
+            this.cboPresentacion.FormattingEnabled = true;
+            this.cboPresentacion.Location = new System.Drawing.Point(10, 136);
+            this.cboPresentacion.Name = "cboPresentacion";
+            this.cboPresentacion.Size = new System.Drawing.Size(100, 21);
+            this.cboPresentacion.TabIndex = 24;
+            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -515,7 +516,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPresentacion)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -539,10 +540,9 @@
         private System.Windows.Forms.TextBox txtArticuloId;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboComprobante;
-        private System.Windows.Forms.TextBox txtProveedorId;
+        private System.Windows.Forms.ComboBox cboCategoria;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtIdIngreso;
+        private System.Windows.Forms.TextBox txtCategoriaId;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -557,13 +557,14 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnBuscarArticulo;
+        private System.Windows.Forms.Button btnBuscarCategoria;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgPresentacion;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnQuitar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cboPresentacion;
     }
 }
