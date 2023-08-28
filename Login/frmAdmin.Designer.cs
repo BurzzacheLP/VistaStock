@@ -91,7 +91,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.groupBox1.Location = new System.Drawing.Point(400, 96);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(248, 269);
+            this.groupBox1.Size = new System.Drawing.Size(248, 248);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Configurar Usuarios";
@@ -255,7 +255,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(33, 153);
+            this.comboBox1.Location = new System.Drawing.Point(33, 141);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(173, 21);
             this.comboBox1.TabIndex = 4;
@@ -263,7 +263,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 137);
+            this.label4.Location = new System.Drawing.Point(30, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 5;
@@ -272,7 +272,7 @@
             // dateCaducidad
             // 
             this.dateCaducidad.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateCaducidad.Location = new System.Drawing.Point(33, 214);
+            this.dateCaducidad.Location = new System.Drawing.Point(33, 192);
             this.dateCaducidad.Name = "dateCaducidad";
             this.dateCaducidad.Size = new System.Drawing.Size(95, 20);
             this.dateCaducidad.TabIndex = 6;
@@ -280,7 +280,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 198);
+            this.label5.Location = new System.Drawing.Point(30, 176);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 13);
             this.label5.TabIndex = 7;
@@ -289,7 +289,7 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(33, 240);
+            this.checkBox6.Location = new System.Drawing.Point(33, 218);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(77, 17);
             this.checkBox6.TabIndex = 5;
@@ -300,7 +300,7 @@
             // 
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Location = new System.Drawing.Point(465, 370);
+            this.groupBox4.Location = new System.Drawing.Point(465, 350);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(118, 60);
             this.groupBox4.TabIndex = 24;
