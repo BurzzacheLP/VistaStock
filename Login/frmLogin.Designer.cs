@@ -39,11 +39,11 @@
             this.btnIngresar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picShow = new System.Windows.Forms.PictureBox();
             this.lblErrorPass = new System.Windows.Forms.Label();
             this.lblErrorUsr = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.lblOlvido = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -51,7 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picShow)).BeginInit();
             this.TopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,7 +156,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.pictureBox1);
+            this.groupBox2.Controls.Add(this.picShow);
             this.groupBox2.Controls.Add(this.txtPass);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -167,17 +167,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Contraseña";
             // 
-            // pictureBox1
+            // picShow
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(145, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
+            this.picShow.Image = ((System.Drawing.Image)(resources.GetObject("picShow.Image")));
+            this.picShow.Location = new System.Drawing.Point(145, 24);
+            this.picShow.Name = "picShow";
+            this.picShow.Size = new System.Drawing.Size(24, 23);
+            this.picShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picShow.TabIndex = 3;
+            this.picShow.TabStop = false;
+            this.picShow.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picShow_MouseDown);
+            this.picShow.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picShow_MouseUp);
             // 
             // lblErrorPass
             // 
@@ -204,7 +204,7 @@
             // TopPanel
             // 
             this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(19)))), ((int)(((byte)(72)))));
-            this.TopPanel.Controls.Add(this.button2);
+            this.TopPanel.Controls.Add(this.btnRegister);
             this.TopPanel.Controls.Add(this.btnCerrar);
             this.TopPanel.Controls.Add(this.btnMinimizar);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -214,16 +214,16 @@
             this.TopPanel.TabIndex = 10;
             this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
             // 
-            // button2
+            // btnRegister
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-            this.button2.Location = new System.Drawing.Point(4, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 18);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+            this.btnRegister.Location = new System.Drawing.Point(4, 0);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(71, 18);
+            this.btnRegister.TabIndex = 3;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // lblOlvido
             // 
@@ -266,7 +266,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
             this.TopPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -286,11 +286,11 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label lblErrorPass;
         private System.Windows.Forms.Label lblErrorUsr;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picShow;
         private System.Windows.Forms.Panel TopPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblOlvido;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRegister;
     }
 }
 

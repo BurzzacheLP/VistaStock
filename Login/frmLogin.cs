@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
+using Logica;
+using Comun;
+using Vista;
 
 namespace Login
 {
@@ -10,7 +11,11 @@ namespace Login
         public frmLogin()
         {
             InitializeComponent();
-            //txtPass.UseSystemPasswordChar = false;
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            ObtenerConfigSis.obtener();
         }
 
         #region Cosas para arrastrar la interfaz
@@ -89,12 +94,12 @@ namespace Login
         #endregion
 
         #region Mostrar Contraseña
-        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        private void picShow_MouseDown(object sender, MouseEventArgs e)
         {
             txtPass.UseSystemPasswordChar = true;
         }
 
-        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        private void picShow_MouseUp(object sender, MouseEventArgs e)
         {
             txtPass.UseSystemPasswordChar = false;
         }
@@ -111,11 +116,12 @@ namespace Login
 
         private void lblOlvido_Click(object sender, EventArgs e)
         {
+            frmOlvido Olvido = new frmOlvido();
+            Olvido.Show();
             this.Hide();
-            
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
             this.Hide();
             frmRegister register = new frmRegister();
@@ -124,7 +130,58 @@ namespace Login
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            bool validar = true;
 
+            // Chequear si el campo de usuario tiene texto
+            if(string.IsNullOrEmpty(txtUser.Text))
+            {
+                lblErrorUsr.Visible = true;
+                lblErrorUsr.Text = "Por favor rellene el campo";
+                validar = false;
+            }
+
+            // Chequear si el campo de contraseña tiene texto
+            if(string.IsNullOrEmpty(txtPass.Text))
+            {
+                lblErrorPass.Visible = true;
+                lblErrorPass.Text = "Por favor rellene el campo";
+                validar = false;
+
+            }
+
+            if (validar == true)
+            {
+                consultarLogueo cl = new consultarLogueo();
+                // Cambiar a Comun.NombrePermiso cuando se agregue la capa comun
+                if (cl.preguntar(txtUser.Text, txtPass.Text))
+                {
+                    switch (Comun.NombrePermiso)
+                    {
+                        case "admin":
+                            // Nota; Hacer que el boton de Administrador
+                            // se muestre solo si el usuario es admin
+                            frmAplicacion frmApp = new frmAplicacion();
+                            frmApp.Show();
+                            break;
+
+                        case "empleado1":
+                        case "empleado2":
+                        case "empleado3":
+                            frmAplicacion Apliacion = new frmAplicacion();
+                            Apliacion.Show();
+                            break;
+                        case "persona":
+                            MessageBox.Show("El usuario no tiene permisos");
+                            break;
+
+                    }
+                    this.Hide();
+                }
+                else
+                {
+                    lblErrorUsr.Visible = true;
+                }
+            }
         }
     }
 }
