@@ -179,5 +179,19 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Downloads\trabajo ferrando\Login\comun\comun.csproj">
+      <Project>{ce9e512b-88f1-48b9-8ac2-8e515fb87444}</Project>
+      <Name>comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Downloads\trabajo ferrando\Login\logica\logica.csproj">
+      <Project>{1537425e-3b43-462c-8419-64af5177466c}</Project>
+      <Name>logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Downloads\trabajo ferrando\Login\servicios\servicios.csproj">
+      <Project>{a57eb5b3-4315-40a6-857b-c93f01777ec9}</Project>
+      <Name>servicios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

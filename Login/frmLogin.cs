@@ -1,7 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using Logica;
-using Comun;
+using logica;
+using comun;
 using Vista;
 
 namespace Login
@@ -17,7 +24,7 @@ namespace Login
         {
             ObtenerConfigSis.obtener();
         }
-
+        
         #region Cosas para arrastrar la interfaz
         // Yo se q no queria q copie el codigo este pero me parece util
         // Copiado de https://stackoverflow.com/a/19491283
@@ -25,11 +32,12 @@ namespace Login
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
-        [DllImportAttribute("user32.dll")]
+    
+        //[DllImportAttribute("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [DllImportAttribute("user32.dll")]
+        //[DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-
+    
         #endregion
 
         #region Controles de Ventana
@@ -151,7 +159,7 @@ namespace Login
 
             if (validar == true)
             {
-                consultarLogueo cl = new consultarLogueo();
+                consultarlogueo cl = new consultarlogueo();
                 // Cambiar a Comun.NombrePermiso cuando se agregue la capa comun
                 if (cl.preguntar(txtUser.Text, txtPass.Text))
                 {

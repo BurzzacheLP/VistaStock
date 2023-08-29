@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
-using Logica;
-using Servicios;
+using servicios;
+using logica;
 using System.Windows.Forms;
 
 namespace Vista
@@ -24,9 +24,9 @@ namespace Vista
                 {
                     ArmarMail.Asunto = "Restablecimiento de Contraseña";
                     ArmarMail.NuevaContraseña = Contraseña;
-                    ArmarMail.DireccionCorreo = gmail;
+                    ArmarMail.DireccionCorreo = mail;
                     ArmarMail.Preparar();
-                    MessageBox.OpenForms["frmLogin"].Show();
+                    Application.OpenForms["frmLogin"].Show();
                     this.Close();
                 }
                 else
