@@ -61,34 +61,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAdmin.cs">
+    <Compile Include="Formularios Hijos\frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAdmin.Designer.cs">
+    <Compile Include="Formularios Hijos\frmAdmin.Designer.cs">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmArticulos.cs">
+    <Compile Include="Formularios Hijos\frmArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmArticulos.Designer.cs">
+    <Compile Include="Formularios Hijos\frmArticulos.Designer.cs">
       <DependentUpon>frmArticulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCategoria.cs">
+    <Compile Include="Formularios Hijos\frmCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCategoria.Designer.cs">
+    <Compile Include="Formularios Hijos\frmCategoria.Designer.cs">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Formularios Hijos\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="Formularios Hijos\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmIngresos.cs">
+    <Compile Include="Formularios Hijos\frmIngresos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmIngresos.Designer.cs">
+    <Compile Include="Formularios Hijos\frmIngresos.Designer.cs">
       <DependentUpon>frmIngresos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmOlvido.cs">
@@ -97,10 +97,10 @@
     <Compile Include="frmOlvido.Designer.cs">
       <DependentUpon>frmOlvido.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProveedores.cs">
+    <Compile Include="Formularios Hijos\frmProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProveedores.Designer.cs">
+    <Compile Include="Formularios Hijos\frmProveedores.Designer.cs">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -117,28 +117,28 @@
     <Compile Include="frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmAdmin.resx">
+    <EmbeddedResource Include="Formularios Hijos\frmAdmin.resx">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmArticulos.resx">
+    <EmbeddedResource Include="Formularios Hijos\frmArticulos.resx">
       <DependentUpon>frmArticulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCategoria.resx">
+    <EmbeddedResource Include="Formularios Hijos\frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="Formularios Hijos\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicacion.resx">
       <DependentUpon>frmAplicacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmIngresos.resx">
+    <EmbeddedResource Include="Formularios Hijos\frmIngresos.resx">
       <DependentUpon>frmIngresos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOlvido.resx">
       <DependentUpon>frmOlvido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProveedores.resx">
+    <EmbeddedResource Include="Formularios Hijos\frmProveedores.resx">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
