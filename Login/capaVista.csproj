@@ -103,6 +103,12 @@
     <Compile Include="Formularios Hijos\frmProveedores.Designer.cs">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPregunta.Designer.cs">
+      <DependentUpon>frmPregunta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="frmAplicacion.cs">
       <SubType>Form</SubType>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios Hijos\frmProveedores.resx">
       <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPregunta.resx">
+      <DependentUpon>frmPregunta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
