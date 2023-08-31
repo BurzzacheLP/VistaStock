@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using comun;
 using servicios;
@@ -43,7 +37,7 @@ namespace Vista
 
             lblTiempo.Text = secondsLeft.ToString();
 
-            if (lblTiempo.Text == "00:00")
+            if (lblTiempo.Text == "0")
             {
                 lblReenviar.Enabled = true;
                 lblReenviar.ForeColor = Color.FromArgb(0, 120, 215);
