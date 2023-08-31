@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblRespState = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPregunta = new System.Windows.Forms.TextBox();
+            this.txtRespuesta = new System.Windows.Forms.TextBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.lblPreguntaState = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -66,20 +66,21 @@
             this.lblRespState.Size = new System.Drawing.Size(29, 13);
             this.lblRespState.TabIndex = 2;
             this.lblRespState.Text = "Error";
+            this.lblRespState.Visible = false;
             // 
-            // textBox1
+            // txtPregunta
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtPregunta.Location = new System.Drawing.Point(35, 39);
+            this.txtPregunta.Name = "txtPregunta";
+            this.txtPregunta.Size = new System.Drawing.Size(190, 20);
+            this.txtPregunta.TabIndex = 3;
             // 
-            // textBox2
+            // txtRespuesta
             // 
-            this.textBox2.Location = new System.Drawing.Point(35, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtRespuesta.Location = new System.Drawing.Point(35, 100);
+            this.txtRespuesta.Name = "txtRespuesta";
+            this.txtRespuesta.Size = new System.Drawing.Size(190, 20);
+            this.txtRespuesta.TabIndex = 4;
             // 
             // btnConfirmar
             // 
@@ -89,6 +90,7 @@
             this.btnConfirmar.TabIndex = 5;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // lblPreguntaState
             // 
@@ -99,6 +101,7 @@
             this.lblPreguntaState.Size = new System.Drawing.Size(29, 13);
             this.lblPreguntaState.TabIndex = 6;
             this.lblPreguntaState.Text = "Error";
+            this.lblPreguntaState.Visible = false;
             // 
             // frmPregunta
             // 
@@ -108,13 +111,13 @@
             this.ClientSize = new System.Drawing.Size(258, 193);
             this.Controls.Add(this.lblPreguntaState);
             this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRespuesta);
+            this.Controls.Add(this.txtPregunta);
             this.Controls.Add(this.lblRespState);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmPregunta";
-            this.Text = "frmPregunta";
+            this.Text = "Pregunta de Seguridad";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,8 +128,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblRespState;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPregunta;
+        private System.Windows.Forms.TextBox txtRespuesta;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Label lblPreguntaState;
     }

@@ -91,6 +91,12 @@
     <Compile Include="Formularios Hijos\frmIngresos.Designer.cs">
       <DependentUpon>frmIngresos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCambioContr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioContr.Designer.cs">
+      <DependentUpon>frmCambioContr.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOlvido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,12 @@
     </Compile>
     <Compile Include="frmPregunta.Designer.cs">
       <DependentUpon>frmPregunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerificacion.Designer.cs">
+      <DependentUpon>frmVerificacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="frmAplicacion.cs">
@@ -141,6 +153,9 @@
     <EmbeddedResource Include="Formularios Hijos\frmIngresos.resx">
       <DependentUpon>frmIngresos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioContr.resx">
+      <DependentUpon>frmCambioContr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOlvido.resx">
       <DependentUpon>frmOlvido.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPregunta.resx">
       <DependentUpon>frmPregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerificacion.resx">
+      <DependentUpon>frmVerificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
