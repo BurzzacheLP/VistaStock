@@ -177,7 +177,6 @@
             this.picShow.TabIndex = 3;
             this.picShow.TabStop = false;
             this.picShow.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picShow_MouseDown);
-            this.picShow.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picShow_MouseUp);
             // 
             // lblErrorPass
             // 
@@ -212,7 +211,6 @@
             this.TopPanel.Name = "TopPanel";
             this.TopPanel.Size = new System.Drawing.Size(274, 22);
             this.TopPanel.TabIndex = 10;
-            this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
             // 
             // btnRegister
             // 
@@ -220,7 +218,7 @@
             this.btnRegister.Location = new System.Drawing.Point(4, 0);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(71, 18);
-            this.btnRegister.TabIndex = 3;
+            this.btnRegister.TabIndex = 11;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
@@ -232,7 +230,7 @@
             this.lblOlvido.Location = new System.Drawing.Point(78, 332);
             this.lblOlvido.Name = "lblOlvido";
             this.lblOlvido.Size = new System.Drawing.Size(119, 13);
-            this.lblOlvido.TabIndex = 11;
+            this.lblOlvido.TabIndex = 4;
             this.lblOlvido.Text = "¿Olvido su contraseña?";
             this.lblOlvido.Click += new System.EventHandler(this.lblOlvido_Click);
             // 
@@ -255,7 +253,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
-            this.Opacity = 0.85D;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

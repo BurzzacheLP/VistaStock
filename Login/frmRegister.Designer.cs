@@ -42,9 +42,6 @@
             this.txtMail = new System.Windows.Forms.TextBox();
             this.lblUserState = new System.Windows.Forms.Label();
             this.lblNombreState = new System.Windows.Forms.Label();
-            this.lblApellidoState = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblDniState = new System.Windows.Forms.Label();
             this.lblMailState = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -55,6 +52,8 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.TopPanel.SuspendLayout();
@@ -62,10 +61,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -211,37 +210,6 @@
             this.lblNombreState.TabIndex = 16;
             this.lblNombreState.Text = "Nombre Valido";
             // 
-            // lblApellidoState
-            // 
-            this.lblApellidoState.AutoSize = true;
-            this.lblApellidoState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(177)))), ((int)(((byte)(91)))));
-            this.lblApellidoState.Location = new System.Drawing.Point(204, 323);
-            this.lblApellidoState.Name = "lblApellidoState";
-            this.lblApellidoState.Size = new System.Drawing.Size(76, 13);
-            this.lblApellidoState.TabIndex = 19;
-            this.lblApellidoState.Text = "Apellido Valido";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.textBox2);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.groupBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox4.Location = new System.Drawing.Point(22, 295);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(175, 57);
-            this.groupBox4.TabIndex = 17;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Apellido";
-            // 
-            // textBox2
-            // 
-            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.Location = new System.Drawing.Point(6, 23);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 22);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Gomez";
-            // 
             // lblDniState
             // 
             this.lblDniState.AutoSize = true;
@@ -293,7 +261,7 @@
             this.groupBox6.Size = new System.Drawing.Size(176, 57);
             this.groupBox6.TabIndex = 17;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Nombre";
+            this.groupBox6.Text = "Nombre Completo";
             // 
             // textBox4
             // 
@@ -302,13 +270,13 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(163, 22);
             this.textBox4.TabIndex = 1;
-            this.textBox4.Text = "Roberto";
+            this.textBox4.Text = "Roberto Gomez";
             // 
             // lblTelefonoState
             // 
             this.lblTelefonoState.AutoSize = true;
             this.lblTelefonoState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(177)))), ((int)(((byte)(91)))));
-            this.lblTelefonoState.Location = new System.Drawing.Point(485, 323);
+            this.lblTelefonoState.Location = new System.Drawing.Point(485, 319);
             this.lblTelefonoState.Name = "lblTelefonoState";
             this.lblTelefonoState.Size = new System.Drawing.Size(81, 13);
             this.lblTelefonoState.TabIndex = 19;
@@ -319,7 +287,7 @@
             this.groupBox8.Controls.Add(this.textBox6);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.groupBox8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox8.Location = new System.Drawing.Point(303, 295);
+            this.groupBox8.Location = new System.Drawing.Point(303, 291);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(175, 57);
             this.groupBox8.TabIndex = 17;
@@ -344,21 +312,43 @@
             this.btnRegister.Text = "Registrarse";
             this.btnRegister.UseVisualStyleBackColor = true;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.groupBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox3.Location = new System.Drawing.Point(22, 291);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(175, 57);
+            this.groupBox3.TabIndex = 22;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tipo de Telefono";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Fijo",
+            "Mobil"});
+            this.comboBox1.Location = new System.Drawing.Point(6, 23);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(163, 24);
+            this.comboBox1.TabIndex = 24;
+            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(595, 402);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lblDniState);
             this.Controls.Add(this.lblTelefonoState);
             this.Controls.Add(this.lblMailState);
             this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.lblApellidoState);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.lblNombreState);
             this.Controls.Add(this.lblUserState);
             this.Controls.Add(this.groupBox2);
@@ -367,7 +357,6 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRegister";
-            this.Opacity = 0.85D;
             this.Text = "Register";
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -379,14 +368,13 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,9 +395,6 @@
         private System.Windows.Forms.Label lblUserState;
         private System.Windows.Forms.Label lblNombreState;
         private System.Windows.Forms.Button btnAbrirLogin;
-        private System.Windows.Forms.Label lblApellidoState;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblDniState;
         private System.Windows.Forms.Label lblMailState;
         private System.Windows.Forms.GroupBox groupBox5;
@@ -420,5 +405,7 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

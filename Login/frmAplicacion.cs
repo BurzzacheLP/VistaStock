@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using comun;
+using logica;
+using servicios;
+using Vista;
 
 namespace Login
 {
@@ -9,6 +13,32 @@ namespace Login
         public frmAplicacion()
         {
             InitializeComponent();
+        }
+
+        
+
+        private void frmAplicacion_Load(object sender, EventArgs e) 
+        {
+            if (Comun.FechaFin <= DateTime.Today)
+            {
+                if (BorrarinfoPersonal.borrar(Comun.UserID)) 
+                { 
+                    this.Close();
+                }
+            }
+
+            if (Comun.bloqueado == true)
+            {
+                BloquearControles.DisableControls(this);
+                MessageBox.Show("Este usuario se encuentra Bloqueado");
+            }
+            else
+            {
+                BloquearControles.DisableControls(this);
+
+            }
+
+            lblUserName.Text = Comun.NombreUsuario.ToString();
         }
 
         private void abrirSubForm(Form frmhijo)
@@ -28,7 +58,7 @@ namespace Login
 
             lblTitulo.Tag = frmhijo;
             lblTitulo.Text = frmhijo.Text;
-
+            panelWorkspace.Controls.Add(frmhijo);
         }
 
         private void abrirCerrarSubMenu(Panel submenu)
@@ -103,14 +133,26 @@ namespace Login
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void lblUsuarios_Click(object sender, EventArgs e)
-        {
-            //abrirSubForm();
-        }
-
         private void lblInicio_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCerrar_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnAdministrador_Click(object sender, EventArgs e)
+        {
+            // Primer caso documentado de yo (lucho perrone) abriendo un formulario adentro de otro
+            frmAdmin Admin = new frmAdmin();
+            abrirSubForm(Admin);
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            // Cerrar Sesion
         }
     }
 }

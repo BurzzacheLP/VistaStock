@@ -24,7 +24,8 @@ namespace Login
         {
             ObtenerConfigSis.obtener();
         }
-        
+
+        /*
         #region Cosas para arrastrar la interfaz
         // Yo se q no queria q copie el codigo este pero me parece util
         // Copiado de https://stackoverflow.com/a/19491283
@@ -39,6 +40,7 @@ namespace Login
         public static extern bool ReleaseCapture();
     
         #endregion
+        */
 
         #region Controles de Ventana
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -77,6 +79,7 @@ namespace Login
 
         private void txtPass_Enter(object sender, EventArgs e)
         {
+            txtPass.UseSystemPasswordChar = true;
             txtPass.ForeColor = Color.FromArgb(90, 92, 230);
             if (txtPass.Text == "Contraseña456")
             {
@@ -86,7 +89,6 @@ namespace Login
 
         private void txtPass_Leave(object sender, EventArgs e)
         {
-
             if (txtPass.Text == "")
             {
                 txtPass.Text = "Usuario123";
@@ -104,23 +106,24 @@ namespace Login
         #region Mostrar Contraseña
         private void picShow_MouseDown(object sender, MouseEventArgs e)
         {
-            txtPass.UseSystemPasswordChar = true;
+            txtPass.UseSystemPasswordChar =! txtPass.UseSystemPasswordChar;
+            //picShow.
         }
 
-        private void picShow_MouseUp(object sender, MouseEventArgs e)
-        {
-            txtPass.UseSystemPasswordChar = false;
-        }
         #endregion
 
+        /*
         private void TopPanel_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
+                
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+                
             }
         }
+        */
 
         private void lblOlvido_Click(object sender, EventArgs e)
         {
@@ -141,7 +144,7 @@ namespace Login
             bool validar = true;
 
             // Chequear si el campo de usuario tiene texto
-            if(string.IsNullOrEmpty(txtUser.Text))
+            if(string.IsNullOrEmpty(txtUser.Text) || txtUser.Text == "Usuario123")
             {
                 lblErrorUsr.Visible = true;
                 lblErrorUsr.Text = "Por favor rellene el campo";
@@ -149,7 +152,7 @@ namespace Login
             }
 
             // Chequear si el campo de contraseña tiene texto
-            if(string.IsNullOrEmpty(txtPass.Text))
+            if(string.IsNullOrEmpty(txtPass.Text) || txtPass.Text == "Contraseña456")
             {
                 lblErrorPass.Visible = true;
                 lblErrorPass.Text = "Por favor rellene el campo";
@@ -160,7 +163,7 @@ namespace Login
             if (validar == true)
             {
                 consultarlogueo cl = new consultarlogueo();
-                // Cambiar a Comun.NombrePermiso cuando se agregue la capa comun
+                
                 if (cl.preguntar(txtUser.Text, txtPass.Text))
                 {
                     switch (Comun.NombrePermiso)
@@ -188,6 +191,7 @@ namespace Login
                 else
                 {
                     lblErrorUsr.Visible = true;
+                    lblErrorUsr.Text = "Nombre de Usuario Inexistente";
                 }
             }
         }

@@ -48,14 +48,15 @@ namespace Vista
                 lblPregunta.Text = dt.Rows[0][0].ToString();
                 mail = dt.Rows[0][1].ToString();
 
-                txtUser.Enabled = false;
+                
+                //txtUser.Enabled = false;
                 lblUsrState.Visible = false;
 
-                txtPregunta.Enabled = false;
+                //txtPregunta.Enabled = false;
                 
-                btnEnviarCorreo.Enabled = true;
+                //btnEnviarCorreo.Enabled = true;
 
-                btnObtPregunta.Enabled = false;
+                //btnObtPregunta.Enabled = false;
             }
             else
             {

@@ -111,6 +111,7 @@
             this.btnAdministrador.Text = "Administrador";
             this.btnAdministrador.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdministrador.UseVisualStyleBackColor = true;
+            this.btnAdministrador.Click += new System.EventHandler(this.btnAdministrador_Click);
             // 
             // btnLogOut
             // 
@@ -122,6 +123,7 @@
             this.btnLogOut.Size = new System.Drawing.Size(31, 28);
             this.btnLogOut.TabIndex = 4;
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // lblInicio
             // 
@@ -225,7 +227,6 @@
             this.lblAlmacen.TabIndex = 4;
             this.lblAlmacen.Text = "      &Almacen";
             this.lblAlmacen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblAlmacen.Click += new System.EventHandler(this.lblUsuarios_Click);
             // 
             // pictureBox2
             // 
@@ -281,6 +282,7 @@
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
             // 
             // btnMinimizar
             // 
@@ -312,7 +314,6 @@
             this.Controls.Add(this.panelWorkspace);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAplicacion";
-            this.Opacity = 0.85D;
             this.Text = "Aplicacon";
             this.sidePanel.ResumeLayout(false);
             this.sidePanel.PerformLayout();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace Vista
         public frmAdmin()
         {
             InitializeComponent();
+        }
+
+        private void frmAdmin_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = creardt.crear();
+            dataGridView1.AutoResizeColumns();
+
+            dateCaducidad.MinDate = DateTime.Today;
+
+
+            
+
         }
     }
 }

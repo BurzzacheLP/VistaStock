@@ -9,7 +9,9 @@ namespace datos
 {
     public abstract class conn
     {
-        private static string cadena = "Data Source=localhost;Initial Catalog=login;Integrated Security=True;";
+        private static string cadena = "Server=TOSTADORA3\\SQLEXPRESS;Database=dbventas;Integrated Security=True;";
+       
+
         public SqlConnection crear()
         {
             return new SqlConnection(cadena);

@@ -31,27 +31,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateCaducidad = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboRepeat = new System.Windows.Forms.CheckBox();
+            this.cbo2FA = new System.Windows.Forms.CheckBox();
+            this.cboSpecChar = new System.Windows.Forms.CheckBox();
+            this.cboCaps = new System.Windows.Forms.CheckBox();
+            this.cboMinChar = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dateCaducidad = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -96,6 +96,50 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Configurar Usuarios";
             // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(33, 218);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(77, 17);
+            this.checkBox6.TabIndex = 5;
+            this.checkBox6.Text = "Bloqueado";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(30, 176);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Fecha de Caducidad";
+            // 
+            // dateCaducidad
+            // 
+            this.dateCaducidad.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateCaducidad.Location = new System.Drawing.Point(33, 192);
+            this.dateCaducidad.Name = "dateCaducidad";
+            this.dateCaducidad.Size = new System.Drawing.Size(95, 20);
+            this.dateCaducidad.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(30, 125);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Permisos";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(33, 141);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(173, 21);
+            this.comboBox1.TabIndex = 4;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -130,11 +174,11 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox5);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.cboRepeat);
+            this.groupBox2.Controls.Add(this.cbo2FA);
+            this.groupBox2.Controls.Add(this.cboSpecChar);
+            this.groupBox2.Controls.Add(this.cboCaps);
+            this.groupBox2.Controls.Add(this.cboMinChar);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.groupBox2.Location = new System.Drawing.Point(674, 96);
             this.groupBox2.Name = "groupBox2";
@@ -142,6 +186,56 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Configurar Sistema";
+            // 
+            // cboRepeat
+            // 
+            this.cboRepeat.AutoSize = true;
+            this.cboRepeat.Location = new System.Drawing.Point(16, 117);
+            this.cboRepeat.Name = "cboRepeat";
+            this.cboRepeat.Size = new System.Drawing.Size(122, 17);
+            this.cboRepeat.TabIndex = 4;
+            this.cboRepeat.Text = "Repetir Contraseñas";
+            this.cboRepeat.UseVisualStyleBackColor = true;
+            // 
+            // cbo2FA
+            // 
+            this.cbo2FA.AutoSize = true;
+            this.cbo2FA.Location = new System.Drawing.Point(16, 94);
+            this.cbo2FA.Name = "cbo2FA";
+            this.cbo2FA.Size = new System.Drawing.Size(152, 17);
+            this.cbo2FA.TabIndex = 3;
+            this.cbo2FA.Text = "Autentificacion en 2 Pasos";
+            this.cbo2FA.UseVisualStyleBackColor = true;
+            // 
+            // cboSpecChar
+            // 
+            this.cboSpecChar.AutoSize = true;
+            this.cboSpecChar.Location = new System.Drawing.Point(16, 71);
+            this.cboSpecChar.Name = "cboSpecChar";
+            this.cboSpecChar.Size = new System.Drawing.Size(130, 17);
+            this.cboSpecChar.TabIndex = 2;
+            this.cboSpecChar.Text = "Caracteres especiales";
+            this.cboSpecChar.UseVisualStyleBackColor = true;
+            // 
+            // cboCaps
+            // 
+            this.cboCaps.AutoSize = true;
+            this.cboCaps.Location = new System.Drawing.Point(16, 48);
+            this.cboCaps.Name = "cboCaps";
+            this.cboCaps.Size = new System.Drawing.Size(146, 17);
+            this.cboCaps.TabIndex = 1;
+            this.cboCaps.Text = "Mayusculas y Minusculas";
+            this.cboCaps.UseVisualStyleBackColor = true;
+            // 
+            // cboMinChar
+            // 
+            this.cboMinChar.AutoSize = true;
+            this.cboMinChar.Location = new System.Drawing.Point(16, 25);
+            this.cboMinChar.Name = "cboMinChar";
+            this.cboMinChar.Size = new System.Drawing.Size(128, 17);
+            this.cboMinChar.TabIndex = 0;
+            this.cboMinChar.Text = "Minimo de Caracteres";
+            this.cboMinChar.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -201,100 +295,6 @@
             this.btnEditar.Size = new System.Drawing.Size(40, 40);
             this.btnEditar.TabIndex = 22;
             this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(16, 25);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(128, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Minimo de Caracteres";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(16, 48);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(146, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Mayusculas y Minusculas";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(16, 94);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(152, 17);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Autentificacion en 2 Pasos";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(16, 71);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(130, 17);
-            this.checkBox4.TabIndex = 2;
-            this.checkBox4.Text = "Caracteres especiales";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(16, 117);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(122, 17);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "Repetir Contraseñas";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(33, 141);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(173, 21);
-            this.comboBox1.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Permisos";
-            // 
-            // dateCaducidad
-            // 
-            this.dateCaducidad.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateCaducidad.Location = new System.Drawing.Point(33, 192);
-            this.dateCaducidad.Name = "dateCaducidad";
-            this.dateCaducidad.Size = new System.Drawing.Size(95, 20);
-            this.dateCaducidad.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 176);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Fecha de Caducidad";
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(33, 218);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(77, 17);
-            this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "Bloqueado";
-            this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -368,6 +368,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAdmin";
             this.Text = "frmAdmin";
+            this.Load += new System.EventHandler(this.frmAdmin_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -399,11 +400,11 @@
         private System.Windows.Forms.DateTimePicker dateCaducidad;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cboRepeat;
+        private System.Windows.Forms.CheckBox cbo2FA;
+        private System.Windows.Forms.CheckBox cboSpecChar;
+        private System.Windows.Forms.CheckBox cboCaps;
+        private System.Windows.Forms.CheckBox cboMinChar;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox4;
