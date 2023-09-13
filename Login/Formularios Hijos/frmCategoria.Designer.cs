@@ -37,6 +37,7 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnAnular = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.checkBoxEliminar = new System.Windows.Forms.CheckBox();
             this.dataGridListado = new System.Windows.Forms.DataGridView();
@@ -52,9 +53,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtCategoriaNombre = new System.Windows.Forms.TextBox();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.txtCategoriaId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.tabIngresos.SuspendLayout();
             this.tabListado.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -155,6 +155,16 @@
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label10.Location = new System.Drawing.Point(6, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 13);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Nombre";
+            // 
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(56, 19);
@@ -252,7 +262,7 @@
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.txtCategoriaNombre);
-            this.groupBox2.Controls.Add(this.txtCategoria);
+            this.groupBox2.Controls.Add(this.txtCategoriaId);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.groupBox2.Location = new System.Drawing.Point(9, 5);
             this.groupBox2.Name = "groupBox2";
@@ -303,12 +313,12 @@
             this.txtCategoriaNombre.Size = new System.Drawing.Size(209, 20);
             this.txtCategoriaNombre.TabIndex = 1;
             // 
-            // txtCategoria
+            // txtCategoriaId
             // 
-            this.txtCategoria.Location = new System.Drawing.Point(111, 36);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(209, 20);
-            this.txtCategoria.TabIndex = 0;
+            this.txtCategoriaId.Location = new System.Drawing.Point(111, 36);
+            this.txtCategoriaId.Name = "txtCategoriaId";
+            this.txtCategoriaId.Size = new System.Drawing.Size(209, 20);
+            this.txtCategoriaId.TabIndex = 0;
             // 
             // label1
             // 
@@ -320,16 +330,6 @@
             this.label1.Size = new System.Drawing.Size(343, 73);
             this.label1.TabIndex = 5;
             this.label1.Text = "Categorias";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.label10.Location = new System.Drawing.Point(6, 22);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 13);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Nombre";
             // 
             // frmCategoria
             // 
@@ -383,7 +383,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtCategoriaNombre;
-        private System.Windows.Forms.TextBox txtCategoria;
+        private System.Windows.Forms.TextBox txtCategoriaId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
     }

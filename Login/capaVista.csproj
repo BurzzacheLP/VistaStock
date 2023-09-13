@@ -79,10 +79,10 @@
     <Compile Include="Formularios Hijos\frmCategoria.Designer.cs">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="Login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios Hijos\frmIngresos.cs">
@@ -91,16 +91,16 @@
     <Compile Include="Formularios Hijos\frmIngresos.Designer.cs">
       <DependentUpon>frmIngresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCambioContr.cs">
+    <Compile Include="Login\frmCambioContr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCambioContr.Designer.cs">
+    <Compile Include="Login\frmCambioContr.Designer.cs">
       <DependentUpon>frmCambioContr.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmOlvido.cs">
+    <Compile Include="Login\frmOlvido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmOlvido.Designer.cs">
+    <Compile Include="Login\frmOlvido.Designer.cs">
       <DependentUpon>frmOlvido.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios Hijos\frmProveedores.cs">
@@ -109,16 +109,16 @@
     <Compile Include="Formularios Hijos\frmProveedores.Designer.cs">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPregunta.cs">
+    <Compile Include="Login\frmPregunta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPregunta.Designer.cs">
+    <Compile Include="Login\frmPregunta.Designer.cs">
       <DependentUpon>frmPregunta.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmVerificacion.cs">
+    <Compile Include="Login\frmVerificacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmVerificacion.Designer.cs">
+    <Compile Include="Login\frmVerificacion.Designer.cs">
       <DependentUpon>frmVerificacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -129,10 +129,10 @@
       <DependentUpon>frmAplicacion.cs</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="frmRegister.cs">
+    <Compile Include="Login\frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegister.Designer.cs">
+    <Compile Include="Login\frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Formularios Hijos\frmAdmin.resx">
@@ -144,7 +144,7 @@
     <EmbeddedResource Include="Formularios Hijos\frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicacion.resx">
@@ -153,19 +153,19 @@
     <EmbeddedResource Include="Formularios Hijos\frmIngresos.resx">
       <DependentUpon>frmIngresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCambioContr.resx">
+    <EmbeddedResource Include="Login\frmCambioContr.resx">
       <DependentUpon>frmCambioContr.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmOlvido.resx">
+    <EmbeddedResource Include="Login\frmOlvido.resx">
       <DependentUpon>frmOlvido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios Hijos\frmProveedores.resx">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPregunta.resx">
+    <EmbeddedResource Include="Login\frmPregunta.resx">
       <DependentUpon>frmPregunta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmVerificacion.resx">
+    <EmbeddedResource Include="Login\frmVerificacion.resx">
       <DependentUpon>frmVerificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -178,7 +178,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="frmRegister.resx">
+    <EmbeddedResource Include="Login\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

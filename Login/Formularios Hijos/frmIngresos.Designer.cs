@@ -72,8 +72,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarProveedor = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtIgv = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.comboComprobante = new System.Windows.Forms.ComboBox();
@@ -505,8 +503,6 @@
             // 
             this.groupBox1.Controls.Add(this.btnBuscarProveedor);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.txtIgv);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.comboComprobante);
@@ -530,7 +526,7 @@
             // btnBuscarProveedor
             // 
             this.btnBuscarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarProveedor.Image")));
-            this.btnBuscarProveedor.Location = new System.Drawing.Point(277, 76);
+            this.btnBuscarProveedor.Location = new System.Drawing.Point(277, 68);
             this.btnBuscarProveedor.Name = "btnBuscarProveedor";
             this.btnBuscarProveedor.Size = new System.Drawing.Size(40, 40);
             this.btnBuscarProveedor.TabIndex = 16;
@@ -544,22 +540,6 @@
             this.label10.Size = new System.Drawing.Size(37, 13);
             this.label10.TabIndex = 15;
             this.label10.Text = "Fecha";
-            // 
-            // txtIgv
-            // 
-            this.txtIgv.Location = new System.Drawing.Point(280, 36);
-            this.txtIgv.Name = "txtIgv";
-            this.txtIgv.Size = new System.Drawing.Size(35, 20);
-            this.txtIgv.TabIndex = 14;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(277, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(25, 13);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "IGV";
             // 
             // dateTimePicker1
             // 
@@ -718,8 +698,6 @@
         private System.Windows.Forms.DataGridView dataGridMantenimiento;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtIgv;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboComprobante;
