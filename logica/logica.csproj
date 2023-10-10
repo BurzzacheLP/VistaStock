@@ -74,5 +74,8 @@
       <Name>servicios</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DiagramLogica.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

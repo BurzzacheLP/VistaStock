@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAplicacion));
             this.sidePanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@
             this.lblInicio = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblVentas = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
             this.lblConsulReportes = new System.Windows.Forms.Label();
             this.lblMantenimiento = new System.Windows.Forms.Label();
             this.lblCompras = new System.Windows.Forms.Label();
@@ -49,6 +49,7 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panelWorkspace = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.sidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.TopPanel.SuspendLayout();
@@ -66,7 +67,6 @@
             this.sidePanel.Controls.Add(this.lblInicio);
             this.sidePanel.Controls.Add(this.lblFecha);
             this.sidePanel.Controls.Add(this.lblVentas);
-            this.sidePanel.Controls.Add(this.lblHora);
             this.sidePanel.Controls.Add(this.lblConsulReportes);
             this.sidePanel.Controls.Add(this.lblMantenimiento);
             this.sidePanel.Controls.Add(this.lblCompras);
@@ -101,6 +101,7 @@
             // 
             // btnAdministrador
             // 
+            this.btnAdministrador.Enabled = false;
             this.btnAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrador.Image = ((System.Drawing.Image)(resources.GetObject("btnAdministrador.Image")));
             this.btnAdministrador.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,9 +109,10 @@
             this.btnAdministrador.Name = "btnAdministrador";
             this.btnAdministrador.Size = new System.Drawing.Size(96, 28);
             this.btnAdministrador.TabIndex = 15;
-            this.btnAdministrador.Text = "Administrador";
+            this.btnAdministrador.Text = " &Administrador";
             this.btnAdministrador.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdministrador.UseVisualStyleBackColor = true;
+            this.btnAdministrador.Visible = false;
             this.btnAdministrador.Click += new System.EventHandler(this.btnAdministrador_Click);
             // 
             // btnLogOut
@@ -132,7 +134,7 @@
             this.lblInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.lblInicio.Image = ((System.Drawing.Image)(resources.GetObject("lblInicio.Image")));
             this.lblInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblInicio.Location = new System.Drawing.Point(12, 84);
+            this.lblInicio.Location = new System.Drawing.Point(12, 83);
             this.lblInicio.Name = "lblInicio";
             this.lblInicio.Size = new System.Drawing.Size(61, 20);
             this.lblInicio.TabIndex = 2;
@@ -144,11 +146,11 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.lblFecha.Location = new System.Drawing.Point(5, 55);
+            this.lblFecha.Location = new System.Drawing.Point(11, 60);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(91, 13);
+            this.lblFecha.Size = new System.Drawing.Size(127, 13);
             this.lblFecha.TabIndex = 13;
-            this.lblFecha.Text = "DD / MM / YYYY";
+            this.lblFecha.Text = "00 / 00 / 0000 | 00:00:00";
             // 
             // lblVentas
             // 
@@ -162,16 +164,6 @@
             this.lblVentas.Size = new System.Drawing.Size(74, 19);
             this.lblVentas.TabIndex = 10;
             this.lblVentas.Text = "      &Ventas";
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(97, 55);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(49, 13);
-            this.lblHora.TabIndex = 12;
-            this.lblHora.Text = "00:00:00";
             // 
             // lblConsulReportes
             // 
@@ -303,6 +295,12 @@
             this.panelWorkspace.Size = new System.Drawing.Size(935, 575);
             this.panelWorkspace.TabIndex = 14;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frmAplicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,13 +338,13 @@
         private System.Windows.Forms.Label lblAlmacen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblInicio;
-        private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Panel panelWorkspace;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnAdministrador;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

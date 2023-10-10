@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="logica.ActualizarConfiguracionSis" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>actualizar\ActualizarConfiguracionSis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.ActualizarDatosu" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>actualizar\ActualizarDatosu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.ActualizarPassword" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>actualizar\ActualizarPassword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.ActualizarPreguntasseg" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>actualizar\ActualizarPreguntasseg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.BorrarinfoPersonal" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>BorrarinfoPersonal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.consultarlogueo" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>consultar\consultarlogueo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.ConsultarPreguntasseg" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>consultar\ConsultarPreguntasseg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.UsuarioValidator" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>consultar\UsuarioValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.CrearUsuario" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>CrearUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.creardt" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>obtener\creardt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.ObtenerConfigSis" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>obtener\ObtenerConfigSis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.ObtenerDatos" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>obtener\ObtenerDatos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.ObtenerPreguntasseg" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>obtener\ObtenerPreguntasseg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.ValidarContraseña" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValidarContraseña.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.validarUsuarioExistente" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>validarUsuarioExistente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logica.consultar.ConsultarContraseñasRepetidas" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>consultar\ConsultarContraseñasRepetidas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

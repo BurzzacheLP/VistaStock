@@ -25,7 +25,6 @@ namespace Vista
 
             dateCaducidad.MinDate = DateTime.Today;
 
-
             
 
         }

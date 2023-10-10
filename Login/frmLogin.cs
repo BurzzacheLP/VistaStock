@@ -157,7 +157,6 @@ namespace Login
                 lblErrorPass.Visible = true;
                 lblErrorPass.Text = "Por favor rellene el campo";
                 validar = false;
-
             }
 
             if (validar == true)

@@ -218,7 +218,8 @@
             this.btnRegister.Location = new System.Drawing.Point(4, 0);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(71, 18);
-            this.btnRegister.TabIndex = 11;
+            this.btnRegister.TabIndex = 12;
+            this.btnRegister.TabStop = false;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);

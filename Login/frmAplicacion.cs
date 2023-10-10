@@ -15,10 +15,9 @@ namespace Login
             InitializeComponent();
         }
 
-        
-
         private void frmAplicacion_Load(object sender, EventArgs e) 
         {
+
             if (Comun.FechaFin <= DateTime.Today)
             {
                 if (BorrarinfoPersonal.borrar(Comun.UserID)) 
@@ -35,10 +34,20 @@ namespace Login
             else
             {
                 BloquearControles.DisableControls(this);
-
             }
 
             lblUserName.Text = Comun.NombreUsuario.ToString();
+
+            if (Comun.NombrePermiso == "admin")
+            {
+                MessageBox.Show("Usted es administrador");
+                BloquearControles.EnableControls(btnAdministrador);                
+            }
+            else
+            {
+                BloquearControles.DisableControls(btnAdministrador);
+            }
+
         }
 
         private void abrirSubForm(Form frmhijo)
@@ -153,6 +162,11 @@ namespace Login
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             // Cerrar Sesion
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToString("dd / MM / yyyy | HH:mm:ss");            
         }
     }
 }

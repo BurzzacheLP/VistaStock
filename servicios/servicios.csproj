@@ -54,5 +54,8 @@
     <Compile Include="validacionregistro\FullNameValidator.cs" />
     <Compile Include="validacionregistro\PhoneNumberValidator.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DiagramServicios.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
