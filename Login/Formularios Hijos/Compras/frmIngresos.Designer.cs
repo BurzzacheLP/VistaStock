@@ -62,13 +62,13 @@
             this.btnBuscarArticulo = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateVencimiento = new System.Windows.Forms.DateTimePicker();
+            this.dateProduccion = new System.Windows.Forms.DateTimePicker();
+            this.txtPrecioVenta = new System.Windows.Forms.TextBox();
+            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.txtArticuloName = new System.Windows.Forms.TextBox();
+            this.txtArticuloId = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarProveedor = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -341,13 +341,13 @@
             this.groupBox2.Controls.Add(this.btnBuscarArticulo);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.dateTimePicker3);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.dateVencimiento);
+            this.groupBox2.Controls.Add(this.dateProduccion);
+            this.groupBox2.Controls.Add(this.txtPrecioVenta);
+            this.groupBox2.Controls.Add(this.txtPrecioCompra);
+            this.groupBox2.Controls.Add(this.txtStock);
+            this.groupBox2.Controls.Add(this.txtArticuloName);
+            this.groupBox2.Controls.Add(this.txtArticuloId);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.groupBox2.Location = new System.Drawing.Point(390, 6);
             this.groupBox2.Name = "groupBox2";
@@ -448,56 +448,56 @@
             this.label11.TabIndex = 8;
             this.label11.Text = "Articulo";
             // 
-            // dateTimePicker3
+            // dateVencimiento
             // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(279, 86);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(99, 20);
-            this.dateTimePicker3.TabIndex = 6;
+            this.dateVencimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateVencimiento.Location = new System.Drawing.Point(279, 86);
+            this.dateVencimiento.Name = "dateVencimiento";
+            this.dateVencimiento.Size = new System.Drawing.Size(99, 20);
+            this.dateVencimiento.TabIndex = 6;
             // 
-            // dateTimePicker2
+            // dateProduccion
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(279, 36);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(99, 20);
-            this.dateTimePicker2.TabIndex = 5;
+            this.dateProduccion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateProduccion.Location = new System.Drawing.Point(279, 36);
+            this.dateProduccion.Name = "dateProduccion";
+            this.dateProduccion.Size = new System.Drawing.Size(99, 20);
+            this.dateProduccion.TabIndex = 5;
             // 
-            // textBox4
+            // txtPrecioVenta
             // 
-            this.textBox4.Location = new System.Drawing.Point(144, 86);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 4;
+            this.txtPrecioVenta.Location = new System.Drawing.Point(144, 86);
+            this.txtPrecioVenta.Name = "txtPrecioVenta";
+            this.txtPrecioVenta.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecioVenta.TabIndex = 4;
             // 
-            // textBox5
+            // txtPrecioCompra
             // 
-            this.textBox5.Location = new System.Drawing.Point(144, 36);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 3;
+            this.txtPrecioCompra.Location = new System.Drawing.Point(144, 36);
+            this.txtPrecioCompra.Name = "txtPrecioCompra";
+            this.txtPrecioCompra.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecioCompra.TabIndex = 3;
             // 
-            // textBox3
+            // txtStock
             // 
-            this.textBox3.Location = new System.Drawing.Point(9, 136);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtStock.Location = new System.Drawing.Point(9, 136);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(100, 20);
+            this.txtStock.TabIndex = 2;
             // 
-            // textBox2
+            // txtArticuloName
             // 
-            this.textBox2.Location = new System.Drawing.Point(9, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtArticuloName.Location = new System.Drawing.Point(9, 86);
+            this.txtArticuloName.Name = "txtArticuloName";
+            this.txtArticuloName.Size = new System.Drawing.Size(100, 20);
+            this.txtArticuloName.TabIndex = 1;
             // 
-            // textBox1
+            // txtArticuloId
             // 
-            this.textBox1.Location = new System.Drawing.Point(9, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtArticuloId.Location = new System.Drawing.Point(9, 36);
+            this.txtArticuloId.Name = "txtArticuloId";
+            this.txtArticuloId.Size = new System.Drawing.Size(100, 20);
+            this.txtArticuloId.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -715,13 +715,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dateVencimiento;
+        private System.Windows.Forms.DateTimePicker dateProduccion;
+        private System.Windows.Forms.TextBox txtPrecioVenta;
+        private System.Windows.Forms.TextBox txtPrecioCompra;
+        private System.Windows.Forms.TextBox txtStock;
+        private System.Windows.Forms.TextBox txtArticuloName;
+        private System.Windows.Forms.TextBox txtArticuloId;
         private System.Windows.Forms.Button btnQuitar;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;

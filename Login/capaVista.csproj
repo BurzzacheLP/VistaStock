@@ -79,16 +79,22 @@
     <Compile Include="Formularios Hijos\frmCategoria.Designer.cs">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios Hijos\Ventas\frmEgresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Hijos\Ventas\frmEgresos.Designer.cs">
+      <DependentUpon>frmEgresos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios Hijos\frmIngresos.cs">
+    <Compile Include="Formularios Hijos\Compras\frmIngresos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios Hijos\frmIngresos.Designer.cs">
+    <Compile Include="Formularios Hijos\Compras\frmIngresos.Designer.cs">
       <DependentUpon>frmIngresos.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\frmCambioContr.cs">
@@ -144,13 +150,16 @@
     <EmbeddedResource Include="Formularios Hijos\frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Hijos\Ventas\frmEgresos.resx">
+      <DependentUpon>frmEgresos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicacion.resx">
       <DependentUpon>frmAplicacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios Hijos\frmIngresos.resx">
+    <EmbeddedResource Include="Formularios Hijos\Compras\frmIngresos.resx">
       <DependentUpon>frmIngresos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmCambioContr.resx">
