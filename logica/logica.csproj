@@ -42,23 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="actualizar\ActualizarPreguntasseg.cs" />
-    <Compile Include="actualizar\ActualizarConfiguracionSis.cs" />
-    <Compile Include="actualizar\ActualizarDatosu.cs" />
-    <Compile Include="actualizar\ActualizarPassword.cs" />
-    <Compile Include="BorrarinfoPersonal.cs" />
-    <Compile Include="consultar\ConsultarPreguntasseg.cs" />
-    <Compile Include="consultar\ConsultarContraseñasRepetidas.cs" />
-    <Compile Include="obtener\ObtenerPreguntasseg.cs" />
-    <Compile Include="obtener\creardt.cs" />
-    <Compile Include="CrearUsuario.cs" />
-    <Compile Include="obtener\ObtenerConfigSis.cs" />
-    <Compile Include="obtener\ObtenerDatos.cs" />
-    <Compile Include="consultar\UsuarioValidator.cs" />
-    <Compile Include="consultar\consultarlogueo.cs" />
+    <Compile Include="Login\actualizar\ActualizarPreguntasseg.cs" />
+    <Compile Include="Login\actualizar\ActualizarConfiguracionSis.cs" />
+    <Compile Include="Login\actualizar\ActualizarDatosu.cs" />
+    <Compile Include="Login\actualizar\ActualizarPassword.cs" />
+    <Compile Include="Login\BorrarinfoPersonal.cs" />
+    <Compile Include="Login\consultar\ConsultarPreguntasseg.cs" />
+    <Compile Include="Login\consultar\ConsultarContraseñasRepetidas.cs" />
+    <Compile Include="Login\obtener\ObtenerPreguntasseg.cs" />
+    <Compile Include="Login\obtener\creardt.cs" />
+    <Compile Include="Login\CrearUsuario.cs" />
+    <Compile Include="Login\obtener\ObtenerConfigSis.cs" />
+    <Compile Include="Login\obtener\ObtenerDatos.cs" />
+    <Compile Include="Login\consultar\UsuarioValidator.cs" />
+    <Compile Include="Login\consultar\consultarlogueo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValidarContraseña.cs" />
-    <Compile Include="validarUsuarioExistente.cs" />
+    <Compile Include="Login\ValidarContraseña.cs" />
+    <Compile Include="Login\validarUsuarioExistente.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\comun\comun.csproj">

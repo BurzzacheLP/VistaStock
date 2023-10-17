@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Vista
+namespace Vista.Formularios_Hijos.Ventas
 {
-    public partial class frmIngresos : Form
+    public partial class frmEgresos : Form
     {
-        public frmIngresos()
+        public frmEgresos()
         {
             InitializeComponent();
         }

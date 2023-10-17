@@ -42,21 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="actualizar\ActualizarPreguntasSeg.cs" />
-    <Compile Include="actualizar\ActualizarConfigSis.cs" />
-    <Compile Include="actualizar\ActualizarDatosU.cs" />
-    <Compile Include="AgregarUsuario.cs" />
-    <Compile Include="actualizar\ActualizarCotraseñas.cs" />
-    <Compile Include="BorrarInfoPersonal.cs" />
-    <Compile Include="conn.cs" />
-    <Compile Include="consultar\ConsultarContraseñasRep.cs" />
-    <Compile Include="consultar\consultarlogueod.cs" />
-    <Compile Include="consultar\ConsultarPreguntasSeg.cs" />
-    <Compile Include="consultar\consultarUsuario.cs" />
-    <Compile Include="obtener\ObtenerPreguntaSeg.cs" />
-    <Compile Include="obtener\ObtenerConfigSis.cs" />
-    <Compile Include="obtener\obtenerDatosU.cs" />
-    <Compile Include="obtener\obtenerusuarios.cs" />
+    <Compile Include="Login\actualizar\ActualizarPreguntasSeg.cs" />
+    <Compile Include="Login\actualizar\ActualizarConfigSis.cs" />
+    <Compile Include="Login\actualizar\ActualizarDatosU.cs" />
+    <Compile Include="Login\AgregarUsuario.cs" />
+    <Compile Include="Login\actualizar\ActualizarCotraseñas.cs" />
+    <Compile Include="Login\BorrarInfoPersonal.cs" />
+    <Compile Include="Login\conn.cs" />
+    <Compile Include="Login\consultar\ConsultarContraseñasRep.cs" />
+    <Compile Include="Login\consultar\consultarlogueod.cs" />
+    <Compile Include="Login\consultar\ConsultarPreguntasSeg.cs" />
+    <Compile Include="Login\consultar\consultarUsuario.cs" />
+    <Compile Include="Login\obtener\ObtenerPreguntaSeg.cs" />
+    <Compile Include="Login\obtener\ObtenerConfigSis.cs" />
+    <Compile Include="Login\obtener\obtenerDatosU.cs" />
+    <Compile Include="Login\obtener\obtenerusuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

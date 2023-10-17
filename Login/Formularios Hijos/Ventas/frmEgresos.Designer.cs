@@ -1,6 +1,6 @@
-﻿namespace Vista
+﻿namespace Vista.Formularios_Hijos.Ventas
 {
-    partial class frmIngresos
+    partial class frmEgresos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIngresos));
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEgresos));
             this.tabIngresos = new System.Windows.Forms.TabControl();
             this.tabListado = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -72,8 +71,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarProveedor = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtIgv = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.comboComprobante = new System.Windows.Forms.ComboBox();
@@ -87,6 +84,7 @@
             this.txtIdIngreso = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridMantenimiento = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabIngresos.SuspendLayout();
             this.tabListado.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -100,20 +98,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMantenimiento)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 44F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(12, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(305, 67);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "   Ingresos";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // tabIngresos
             // 
             this.tabIngresos.Controls.Add(this.tabListado);
@@ -122,7 +106,7 @@
             this.tabIngresos.Name = "tabIngresos";
             this.tabIngresos.SelectedIndex = 0;
             this.tabIngresos.Size = new System.Drawing.Size(911, 478);
-            this.tabIngresos.TabIndex = 1;
+            this.tabIngresos.TabIndex = 3;
             // 
             // tabListado
             // 
@@ -508,8 +492,6 @@
             // 
             this.groupBox1.Controls.Add(this.btnBuscarProveedor);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.txtIgv);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.comboComprobante);
@@ -533,7 +515,7 @@
             // btnBuscarProveedor
             // 
             this.btnBuscarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarProveedor.Image")));
-            this.btnBuscarProveedor.Location = new System.Drawing.Point(277, 76);
+            this.btnBuscarProveedor.Location = new System.Drawing.Point(277, 68);
             this.btnBuscarProveedor.Name = "btnBuscarProveedor";
             this.btnBuscarProveedor.Size = new System.Drawing.Size(40, 40);
             this.btnBuscarProveedor.TabIndex = 16;
@@ -547,22 +529,6 @@
             this.label10.Size = new System.Drawing.Size(37, 13);
             this.label10.TabIndex = 15;
             this.label10.Text = "Fecha";
-            // 
-            // txtIgv
-            // 
-            this.txtIgv.Location = new System.Drawing.Point(280, 36);
-            this.txtIgv.Name = "txtIgv";
-            this.txtIgv.Size = new System.Drawing.Size(35, 20);
-            this.txtIgv.TabIndex = 14;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(277, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(25, 13);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "IGV";
             // 
             // dateTimePicker1
             // 
@@ -584,6 +550,9 @@
             // comboComprobante
             // 
             this.comboComprobante.FormattingEnabled = true;
+            this.comboComprobante.Items.AddRange(new object[] {
+            "Factura",
+            "Remito"});
             this.comboComprobante.Location = new System.Drawing.Point(10, 86);
             this.comboComprobante.Name = "comboComprobante";
             this.comboComprobante.Size = new System.Drawing.Size(100, 21);
@@ -670,20 +639,28 @@
             this.dataGridMantenimiento.Size = new System.Drawing.Size(797, 269);
             this.dataGridMantenimiento.TabIndex = 0;
             // 
-            // frmIngresos
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label1.Location = new System.Drawing.Point(12, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(268, 73);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Egresos";
+            // 
+            // frmEgresos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(935, 575);
-            this.ControlBox = false;
             this.Controls.Add(this.tabIngresos);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmIngresos";
-            this.Text = "Ingresos";
+            this.Name = "frmEgresos";
+            this.Text = "frmEgresos";
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
@@ -705,24 +682,48 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabIngresos;
         private System.Windows.Forms.TabPage tabListado;
-        private System.Windows.Forms.TabPage tabMantenimiento;
-        private System.Windows.Forms.DataGridView dataGridListado;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnAnular;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkBoxAnular;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker fechaFin;
         private System.Windows.Forms.DateTimePicker fechaInicio;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnAnular;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridMantenimiento;
+        private System.Windows.Forms.DataGridView dataGridListado;
+        private System.Windows.Forms.TabPage tabMantenimiento;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnQuitar;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnBuscarArticulo;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnBuscarProveedor;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtIgv;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboComprobante;
@@ -735,33 +736,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtIdIngreso;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnQuitar;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnBuscarArticulo;
-        private System.Windows.Forms.Button btnBuscarProveedor;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DataGridView dataGridMantenimiento;
+        private System.Windows.Forms.Label label1;
     }
 }
