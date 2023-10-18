@@ -28,7 +28,7 @@ namespace Vista
 
         private void setArticulo(string idarticulo, string nombre)
         {
-            this.txt
+            this.;
         }
 
 

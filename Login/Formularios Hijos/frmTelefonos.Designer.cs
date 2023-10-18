@@ -335,9 +335,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(194, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 13);
+            this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 21;
-            this.label3.Text = "Id";
+            this.label3.Text = "Id Persona";
             // 
             // textBox1
             // 
