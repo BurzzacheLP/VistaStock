@@ -33,23 +33,9 @@ namespace Vista
 
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void frmArticulos_Load(object sender, EventArgs e)
         {
-            // Cargar una foto
 
-            OpenFileDialog dialog = new OpenFileDialog();
-            DialogResult result = dialog.ShowDialog();
-
-            if (result == DialogResult.OK)
-            {
-                this.imgPresentacion.SizeMode = PictureBoxSizeMode.StretchImage;
-                imgPresentacion.Image = Image.FromFile(dialog.FileName);
-            }
-        }
-
-        private void btnQuitar_Click(object sender, EventArgs e)
-        {
-            this.imgPresentacion.Dispose();
         }
     }
 }

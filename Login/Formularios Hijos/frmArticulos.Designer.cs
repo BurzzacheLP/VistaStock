@@ -58,18 +58,17 @@
             this.txtArticuloId = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboPresentacion = new System.Windows.Forms.ComboBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btnQuitar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnBuscarCategoria = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.imgPresentacion = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCategoriaId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabIngresos.SuspendLayout();
             this.tabListado.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -79,8 +78,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgPresentacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabIngresos
@@ -96,6 +94,8 @@
             // tabListado
             // 
             this.tabListado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.tabListado.Controls.Add(this.label9);
+            this.tabListado.Controls.Add(this.textBox1);
             this.tabListado.Controls.Add(this.label7);
             this.tabListado.Controls.Add(this.label6);
             this.tabListado.Controls.Add(this.groupBox6);
@@ -169,7 +169,7 @@
             this.groupBox4.Controls.Add(this.checkBoxEliminar);
             this.groupBox4.Location = new System.Drawing.Point(6, 6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(121, 84);
+            this.groupBox4.Size = new System.Drawing.Size(233, 84);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             // 
@@ -207,7 +207,7 @@
             this.dataGridListado.AllowUserToDeleteRows = false;
             this.dataGridListado.AllowUserToOrderColumns = true;
             this.dataGridListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridListado.Location = new System.Drawing.Point(6, 96);
+            this.dataGridListado.Location = new System.Drawing.Point(6, 104);
             this.dataGridListado.Name = "dataGridListado";
             this.dataGridListado.ReadOnly = true;
             this.dataGridListado.Size = new System.Drawing.Size(891, 350);
@@ -216,6 +216,9 @@
             // tabMantenimiento
             // 
             this.tabMantenimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMantenimiento.Controls.Add(this.label3);
+            this.tabMantenimiento.Controls.Add(this.dataGridView1);
+            this.tabMantenimiento.Controls.Add(this.btnBuscarCategoria);
             this.tabMantenimiento.Controls.Add(this.groupBox3);
             this.tabMantenimiento.Controls.Add(this.groupBox2);
             this.tabMantenimiento.Controls.Add(this.groupBox1);
@@ -285,9 +288,9 @@
             this.groupBox2.Controls.Add(this.txtCodigoVenta);
             this.groupBox2.Controls.Add(this.txtArticuloId);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.groupBox2.Location = new System.Drawing.Point(9, 6);
+            this.groupBox2.Location = new System.Drawing.Point(9, 8);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(415, 449);
+            this.groupBox2.Size = new System.Drawing.Size(415, 440);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Articulo";
@@ -360,19 +363,15 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cboPresentacion);
-            this.groupBox1.Controls.Add(this.groupBox5);
-            this.groupBox1.Controls.Add(this.btnBuscarCategoria);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.imgPresentacion);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cboCategoria);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtCategoriaId);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.groupBox1.Location = new System.Drawing.Point(443, 6);
+            this.groupBox1.Location = new System.Drawing.Point(443, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(351, 449);
+            this.groupBox1.Size = new System.Drawing.Size(351, 439);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categoria";
@@ -385,61 +384,14 @@
             this.cboPresentacion.Size = new System.Drawing.Size(100, 21);
             this.cboPresentacion.TabIndex = 7;
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.btnQuitar);
-            this.groupBox5.Controls.Add(this.btnAgregar);
-            this.groupBox5.Location = new System.Drawing.Point(252, 250);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(74, 166);
-            this.groupBox5.TabIndex = 23;
-            this.groupBox5.TabStop = false;
-            // 
-            // btnQuitar
-            // 
-            this.btnQuitar.Image = ((System.Drawing.Image)(resources.GetObject("btnQuitar.Image")));
-            this.btnQuitar.Location = new System.Drawing.Point(17, 106);
-            this.btnQuitar.Name = "btnQuitar";
-            this.btnQuitar.Size = new System.Drawing.Size(40, 40);
-            this.btnQuitar.TabIndex = 10;
-            this.btnQuitar.UseVisualStyleBackColor = true;
-            this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
-            this.btnAgregar.Location = new System.Drawing.Point(17, 19);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(40, 40);
-            this.btnAgregar.TabIndex = 9;
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
             // btnBuscarCategoria
             // 
             this.btnBuscarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCategoria.Image")));
-            this.btnBuscarCategoria.Location = new System.Drawing.Point(10, 163);
+            this.btnBuscarCategoria.Location = new System.Drawing.Point(453, 180);
             this.btnBuscarCategoria.Name = "btnBuscarCategoria";
             this.btnBuscarCategoria.Size = new System.Drawing.Size(40, 40);
             this.btnBuscarCategoria.TabIndex = 8;
             this.btnBuscarCategoria.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 212);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Presentacion";
-            // 
-            // imgPresentacion
-            // 
-            this.imgPresentacion.Location = new System.Drawing.Point(10, 231);
-            this.imgPresentacion.Name = "imgPresentacion";
-            this.imgPresentacion.Size = new System.Drawing.Size(205, 205);
-            this.imgPresentacion.TabIndex = 11;
-            this.imgPresentacion.TabStop = false;
             // 
             // label8
             // 
@@ -494,6 +446,41 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Articulos";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(451, 233);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(335, 198);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label3.Location = new System.Drawing.Point(498, 194);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Buscar Categoria";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label9.Location = new System.Drawing.Point(126, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Id del Aticulo";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(129, 41);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 5;
+            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,6 +492,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmArticulos";
             this.Text = "frmArticulos";
+            this.Load += new System.EventHandler(this.frmArticulos_Load);
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);
             this.tabListado.PerformLayout();
@@ -513,13 +501,13 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListado)).EndInit();
             this.tabMantenimiento.ResumeLayout(false);
+            this.tabMantenimiento.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgPresentacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -560,13 +548,12 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnBuscarCategoria;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox imgPresentacion;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button btnQuitar;
-        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cboPresentacion;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

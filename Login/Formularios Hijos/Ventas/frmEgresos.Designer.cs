@@ -661,6 +661,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEgresos";
             this.Text = "frmEgresos";
+            this.Load += new System.EventHandler(this.frmEgresos_Load);
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);

@@ -45,25 +45,28 @@
             this.checkBoxEliminar = new System.Windows.Forms.CheckBox();
             this.dataGridListado = new System.Windows.Forms.DataGridView();
             this.tabMantenimiento = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridTelefonos = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtArticuloId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabIngresos.SuspendLayout();
             this.tabListado.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListado)).BeginInit();
             this.tabMantenimiento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTelefonos)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -232,6 +235,8 @@
             // tabMantenimiento
             // 
             this.tabMantenimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMantenimiento.Controls.Add(this.label5);
+            this.tabMantenimiento.Controls.Add(this.dataGridTelefonos);
             this.tabMantenimiento.Controls.Add(this.groupBox3);
             this.tabMantenimiento.Controls.Add(this.groupBox2);
             this.tabMantenimiento.Location = new System.Drawing.Point(4, 22);
@@ -241,13 +246,32 @@
             this.tabMantenimiento.TabIndex = 1;
             this.tabMantenimiento.Text = "Mantenimiento";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label5.Location = new System.Drawing.Point(657, 42);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(175, 20);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Estado de la Operacion";
+            // 
+            // dataGridTelefonos
+            // 
+            this.dataGridTelefonos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridTelefonos.Location = new System.Drawing.Point(6, 103);
+            this.dataGridTelefonos.Name = "dataGridTelefonos";
+            this.dataGridTelefonos.Size = new System.Drawing.Size(891, 351);
+            this.dataGridTelefonos.TabIndex = 23;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btnCancelar);
             this.groupBox3.Controls.Add(this.btnNuevo);
             this.groupBox3.Controls.Add(this.btnGuardar);
             this.groupBox3.Controls.Add(this.btnEditar);
-            this.groupBox3.Location = new System.Drawing.Point(18, 190);
+            this.groupBox3.Location = new System.Drawing.Point(343, 10);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(239, 76);
             this.groupBox3.TabIndex = 22;
@@ -301,10 +325,26 @@
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.groupBox2.Location = new System.Drawing.Point(9, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 165);
+            this.groupBox2.Size = new System.Drawing.Size(313, 80);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Articulo";
+            this.groupBox2.Text = "Agregar Telefono";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(194, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 13);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Id";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(197, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 20;
             // 
             // label14
             // 
@@ -333,7 +373,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 16);
+            this.label4.Location = new System.Drawing.Point(6, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 13);
             this.label4.TabIndex = 0;
@@ -346,22 +386,6 @@
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(54, 21);
             this.cboCategoria.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(131, 81);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Id Articulo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(134, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 20;
             // 
             // frmTelefonos
             // 
@@ -381,6 +405,8 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListado)).EndInit();
             this.tabMantenimiento.ResumeLayout(false);
+            this.tabMantenimiento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTelefonos)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -420,5 +446,7 @@
         private System.Windows.Forms.ComboBox cboTipoTel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridTelefonos;
+        private System.Windows.Forms.Label label5;
     }
 }

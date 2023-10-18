@@ -16,5 +16,10 @@ namespace Vista.Formularios_Hijos.Ventas
         {
             InitializeComponent();
         }
+
+        private void frmEgresos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

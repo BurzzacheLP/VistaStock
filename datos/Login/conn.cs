@@ -9,8 +9,12 @@ namespace datos
 {
     public abstract class conn
     {
+        // Cadena para la compu de casa
+        //private static string cadena = "Server=TOSTADORA3\\SQLEXPRESS;Database=dbventas;Integrated Security=True;";
+
+        // Cadena para la nesbu
         private static string cadena = "Server=TOSTADORA3\\SQLEXPRESS;Database=dbventas;Integrated Security=True;";
-       
+
 
         public SqlConnection crear()
         {

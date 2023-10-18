@@ -85,10 +85,10 @@
     <Compile Include="Formularios Hijos\Ventas\frmEgresos.Designer.cs">
       <DependentUpon>frmEgresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTelefonos.cs">
+    <Compile Include="Formularios Hijos\frmTelefonos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTelefonos.Designer.cs">
+    <Compile Include="Formularios Hijos\frmTelefonos.Designer.cs">
       <DependentUpon>frmTelefonos.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\frmLogin.cs">
@@ -159,7 +159,7 @@
     <EmbeddedResource Include="Formularios Hijos\Ventas\frmEgresos.resx">
       <DependentUpon>frmEgresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTelefonos.resx">
+    <EmbeddedResource Include="Formularios Hijos\frmTelefonos.resx">
       <DependentUpon>frmTelefonos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmLogin.resx">

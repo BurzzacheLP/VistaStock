@@ -118,16 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnBuscarProveedor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOZJREFUSEvt
-        k4EJAjEUQzuKoziKmziKoziKo+h/0Ej4tlelPUEwEM5ra5Kfuyt//AQOwUvwVnmta0uA0L3DJSYkR4zU
-        x0p+s3YOTqOVFhOtT4POs4FqY28aXhHCXhF700BUUziXpBcwIbWMSO6V7QbeIpkS4BT8yJi+SQsRQkTQ
-        c8hkfWjiD9Kp954r95iSGnDVNJvfBwddlPR5dJlnIRn7pC/o/dmhpLkK7lmHXQwPBGSgegSvrgsZtChB
-        F1J9Xu3W9M9DLXq3mqJF9oZv0jsgKWIiU8h4mUkGol8zgXxTuwCTEC/lAckxfB3J55ihAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
   <data name="btnBuscar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAALdJREFUSEvt
@@ -206,6 +196,16 @@
         1otaclJuTUuF6tJEg6V7CpMUk6QvrCQxnpEVjCQxnpEVjCQxnjFMGPD/BkN+yoCTzLn5aHysNcgOZHnI
         wMQK55KrZnRwwom5Xu5kjYGNaNpDrHHKGoMsxyG42cDnf9gO+ka+A98LisZvVONaaFjlYUzOIsz6rLjH
         VZvrbvg1Tk22QFNNMD8EH2H56dyJaXoCSTirj6V4Hy4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnBuscarProveedor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOZJREFUSEvt
+        k4EJAjEUQzuKoziKmziKoziKo+h/0Ej4tlelPUEwEM5ra5Kfuyt//AQOwUvwVnmta0uA0L3DJSYkR4zU
+        x0p+s3YOTqOVFhOtT4POs4FqY28aXhHCXhF700BUUziXpBcwIbWMSO6V7QbeIpkS4BT8yJi+SQsRQkTQ
+        c8hkfWjiD9Kp954r95iSGnDVNJvfBwddlPR5dJlnIRn7pC/o/dmhpLkK7lmHXQwPBGSgegSvrgsZtChB
+        F1J9Xu3W9M9DLXq3mqJF9oZv0jsgKWIiU8h4mUkGol8zgXxTuwCTEC/lAckxfB3J55ihAAAAAElFTkSu
+        QmCC
 </value>
   </data>
 </root>

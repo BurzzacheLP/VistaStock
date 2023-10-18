@@ -168,5 +168,46 @@ namespace Login
         {
             lblFecha.Text = DateTime.Now.ToString("dd / MM / yyyy | HH:mm:ss");            
         }
+
+        private void sidePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblCompras_Click(object sender, EventArgs e)
+        {
+            Form frmIngresos = new frmIngresos();
+            abrirSubForm(frmIngresos);
+        }
+
+        private void lblVentas_Click(object sender, EventArgs e)
+        {
+            Form frmIngresos = new frmIngresos();
+            abrirSubForm(frmIngresos);
+        }
+
+        private void lblAlmacen_Click(object sender, EventArgs e)
+        {
+            Form frmArticulos = new frmArticulos();
+            abrirSubForm(frmArticulos);
+        }
+
+        private void lblConsulReportes_Click(object sender, EventArgs e)
+        {
+            Form frmCategoria = new frmCategoria();
+            abrirSubForm(frmCategoria);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Form frmProveedores = new frmProveedores();
+            abrirSubForm(frmProveedores);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Form frmTelefonos = new frmTelefonos();
+            abrirSubForm(frmTelefonos);
+        }
     }
 }

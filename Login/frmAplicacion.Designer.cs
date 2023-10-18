@@ -39,7 +39,6 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblVentas = new System.Windows.Forms.Label();
             this.lblConsulReportes = new System.Windows.Forms.Label();
-            this.lblMantenimiento = new System.Windows.Forms.Label();
             this.lblCompras = new System.Windows.Forms.Label();
             this.lblAlmacen = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -50,6 +49,8 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panelWorkspace = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.sidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.TopPanel.SuspendLayout();
@@ -60,6 +61,8 @@
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(24)))), ((int)(((byte)(85)))));
+            this.sidePanel.Controls.Add(this.label4);
+            this.sidePanel.Controls.Add(this.label3);
             this.sidePanel.Controls.Add(this.label1);
             this.sidePanel.Controls.Add(this.label2);
             this.sidePanel.Controls.Add(this.btnAdministrador);
@@ -68,7 +71,6 @@
             this.sidePanel.Controls.Add(this.lblFecha);
             this.sidePanel.Controls.Add(this.lblVentas);
             this.sidePanel.Controls.Add(this.lblConsulReportes);
-            this.sidePanel.Controls.Add(this.lblMantenimiento);
             this.sidePanel.Controls.Add(this.lblCompras);
             this.sidePanel.Controls.Add(this.lblAlmacen);
             this.sidePanel.Controls.Add(this.pictureBox2);
@@ -77,6 +79,7 @@
             this.sidePanel.Name = "sidePanel";
             this.sidePanel.Size = new System.Drawing.Size(149, 593);
             this.sidePanel.TabIndex = 12;
+            this.sidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.sidePanel_Paint);
             // 
             // label1
             // 
@@ -159,11 +162,12 @@
             this.lblVentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.lblVentas.Image = ((System.Drawing.Image)(resources.GetObject("lblVentas.Image")));
             this.lblVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblVentas.Location = new System.Drawing.Point(15, 210);
+            this.lblVentas.Location = new System.Drawing.Point(15, 181);
             this.lblVentas.Name = "lblVentas";
             this.lblVentas.Size = new System.Drawing.Size(74, 19);
             this.lblVentas.TabIndex = 10;
             this.lblVentas.Text = "      &Ventas";
+            this.lblVentas.Click += new System.EventHandler(this.lblVentas_Click);
             // 
             // lblConsulReportes
             // 
@@ -172,25 +176,12 @@
             this.lblConsulReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.lblConsulReportes.Image = ((System.Drawing.Image)(resources.GetObject("lblConsulReportes.Image")));
             this.lblConsulReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblConsulReportes.Location = new System.Drawing.Point(15, 270);
+            this.lblConsulReportes.Location = new System.Drawing.Point(15, 241);
             this.lblConsulReportes.Name = "lblConsulReportes";
-            this.lblConsulReportes.Size = new System.Drawing.Size(87, 19);
+            this.lblConsulReportes.Size = new System.Drawing.Size(92, 19);
             this.lblConsulReportes.TabIndex = 7;
-            this.lblConsulReportes.Text = "      &Reportes";
-            // 
-            // lblMantenimiento
-            // 
-            this.lblMantenimiento.AutoSize = true;
-            this.lblMantenimiento.Font = new System.Drawing.Font("Nirmala UI", 10F);
-            this.lblMantenimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.lblMantenimiento.Image = ((System.Drawing.Image)(resources.GetObject("lblMantenimiento.Image")));
-            this.lblMantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblMantenimiento.Location = new System.Drawing.Point(15, 240);
-            this.lblMantenimiento.Name = "lblMantenimiento";
-            this.lblMantenimiento.Size = new System.Drawing.Size(127, 19);
-            this.lblMantenimiento.TabIndex = 6;
-            this.lblMantenimiento.Text = "      &Mantenimiento";
-            this.lblMantenimiento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblConsulReportes.Text = "      &Categoria";
+            this.lblConsulReportes.Click += new System.EventHandler(this.lblConsulReportes_Click);
             // 
             // lblCompras
             // 
@@ -199,12 +190,13 @@
             this.lblCompras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.lblCompras.Image = ((System.Drawing.Image)(resources.GetObject("lblCompras.Image")));
             this.lblCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCompras.Location = new System.Drawing.Point(15, 180);
+            this.lblCompras.Location = new System.Drawing.Point(15, 151);
             this.lblCompras.Name = "lblCompras";
             this.lblCompras.Size = new System.Drawing.Size(88, 19);
             this.lblCompras.TabIndex = 5;
             this.lblCompras.Text = "      &Compras";
             this.lblCompras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblCompras.Click += new System.EventHandler(this.lblCompras_Click);
             // 
             // lblAlmacen
             // 
@@ -213,12 +205,13 @@
             this.lblAlmacen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.lblAlmacen.Image = ((System.Drawing.Image)(resources.GetObject("lblAlmacen.Image")));
             this.lblAlmacen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblAlmacen.Location = new System.Drawing.Point(15, 150);
+            this.lblAlmacen.Location = new System.Drawing.Point(15, 211);
             this.lblAlmacen.Name = "lblAlmacen";
-            this.lblAlmacen.Size = new System.Drawing.Size(85, 19);
+            this.lblAlmacen.Size = new System.Drawing.Size(86, 19);
             this.lblAlmacen.TabIndex = 4;
-            this.lblAlmacen.Text = "      &Almacen";
+            this.lblAlmacen.Text = "      &Articulos";
             this.lblAlmacen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblAlmacen.Click += new System.EventHandler(this.lblAlmacen_Click);
             // 
             // pictureBox2
             // 
@@ -301,6 +294,34 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 10F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.Location = new System.Drawing.Point(15, 271);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 19);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "      &Proveedores";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 10F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Location = new System.Drawing.Point(15, 301);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 19);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "      &Telefonos";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // frmAplicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,7 +354,6 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Label lblVentas;
         private System.Windows.Forms.Label lblConsulReportes;
-        private System.Windows.Forms.Label lblMantenimiento;
         private System.Windows.Forms.Label lblCompras;
         private System.Windows.Forms.Label lblAlmacen;
         private System.Windows.Forms.Label label2;
@@ -345,6 +365,8 @@
         private System.Windows.Forms.Button btnAdministrador;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
 
