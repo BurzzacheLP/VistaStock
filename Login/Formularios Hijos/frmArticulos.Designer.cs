@@ -68,11 +68,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCategoriaId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnBuscarCat = new System.Windows.Forms.Button();
             this.tabIngresos.SuspendLayout();
             this.tabListado.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -82,6 +78,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -390,10 +387,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnBuscarCat);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cboPresentacion);
-            this.groupBox1.Controls.Add(this.btnBuscarCategoria);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cboCategoria);
             this.groupBox1.Controls.Add(this.label5);
@@ -432,15 +429,6 @@
             this.cboPresentacion.Name = "cboPresentacion";
             this.cboPresentacion.Size = new System.Drawing.Size(100, 21);
             this.cboPresentacion.TabIndex = 7;
-            // 
-            // btnBuscarCategoria
-            // 
-            this.btnBuscarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCategoria.Image")));
-            this.btnBuscarCategoria.Location = new System.Drawing.Point(15, 177);
-            this.btnBuscarCategoria.Name = "btnBuscarCategoria";
-            this.btnBuscarCategoria.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarCategoria.TabIndex = 8;
-            this.btnBuscarCategoria.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -484,6 +472,14 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Id Categoria";
             // 
+            // btnBuscarCat
+            // 
+            this.btnBuscarCat.Location = new System.Drawing.Point(14, 177);
+            this.btnBuscarCat.Name = "btnBuscarCat";
+            this.btnBuscarCat.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarCat.TabIndex = 15;
+            this.btnBuscarCat.UseVisualStyleBackColor = true;
+            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -504,12 +500,12 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListado)).EndInit();
             this.tabMantenimiento.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -556,5 +552,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCategoriaId;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnBuscarCat;
     }
 }
