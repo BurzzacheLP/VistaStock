@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using datos;
 using datos.procedimientos_almacenados;
     
-namespace logica.sistema.modificacion
+namespace logica.sistema.baja
 {
     public class EliminarArticulo
     {

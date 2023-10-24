@@ -59,6 +59,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Login\ValidarContraseña.cs" />
     <Compile Include="Login\validarUsuarioExistente.cs" />
+    <Compile Include="sistema\alta\InsertarArticulo.cs" />
+    <Compile Include="sistema\alta\InsertarCategoria.cs" />
+    <Compile Include="sistema\alta\InsertarCliente.cs" />
+    <Compile Include="sistema\alta\InsertarDetalleIngreso.cs" />
+    <Compile Include="sistema\alta\InsertarDetalleVenta.cs" />
+    <Compile Include="sistema\alta\InsertarIngreso.cs" />
+    <Compile Include="sistema\alta\InsertarPresentacion.cs" />
+    <Compile Include="sistema\alta\InsertarProveedor.cs" />
+    <Compile Include="sistema\alta\InsertarVenta.cs" />
+    <Compile Include="sistema\baja\EliminarCategoria.cs" />
+    <Compile Include="sistema\baja\EliminarCliente.cs" />
+    <Compile Include="sistema\baja\EliminarPresentacion.cs" />
+    <Compile Include="sistema\baja\EliminarProveedor.cs" />
+    <Compile Include="sistema\baja\EliminarVenta.cs" />
     <Compile Include="sistema\BuscarArticulosNombre.cs" />
     <Compile Include="sistema\BuscarArticuloVentaCodigo.cs" />
     <Compile Include="sistema\BuscarCategoria.cs" />
@@ -75,7 +89,19 @@
     <Compile Include="sistema\modificacion\EditarProveedor.cs" />
     <Compile Include="sistema\modificacion\EditarUsers.cs" />
     <Compile Include="sistema\modificacion\Editar_Categoria.cs" />
-    <Compile Include="sistema\modificacion\EliminarArticulo.cs" />
+    <Compile Include="sistema\baja\EliminarArticulo.cs" />
+    <Compile Include="sistema\MostrarArticulo.cs" />
+    <Compile Include="sistema\MostrarCategoria.cs" />
+    <Compile Include="sistema\MostrarCliente.cs" />
+    <Compile Include="sistema\MostrarDetalleIngreso.cs" />
+    <Compile Include="sistema\MostrarDetalleVenta.cs" />
+    <Compile Include="sistema\MostrarIngreso.cs" />
+    <Compile Include="sistema\MostrarPresentacion.cs" />
+    <Compile Include="sistema\MostrarProveedor.cs" />
+    <Compile Include="sistema\MostrarTrabajador.cs" />
+    <Compile Include="sistema\MostrarVenta.cs" />
+    <Compile Include="sistema\ReporteFactura.cs" />
+    <Compile Include="sistema\StockArticulo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\comun\comun.csproj">
@@ -94,9 +120,6 @@
   <ItemGroup>
     <None Include="DiagramLogica.cd" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="sistema\alta\" />
-    <Folder Include="sistema\baja\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

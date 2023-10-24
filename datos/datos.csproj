@@ -78,7 +78,6 @@
     <Compile Include="procedimientos almacenados\eliminarCliente.cs" />
     <Compile Include="procedimientos almacenados\eliminarPresentacion.cs" />
     <Compile Include="procedimientos almacenados\eliminarProveedor.cs" />
-    <Compile Include="procedimientos almacenados\eliminarTrabajador.cs" />
     <Compile Include="procedimientos almacenados\eliminarVenta.cs" />
     <Compile Include="procedimientos almacenados\insertarArticulo.cs" />
     <Compile Include="procedimientos almacenados\insertarCategoria.cs" />
