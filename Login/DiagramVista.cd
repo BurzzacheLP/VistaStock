@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Vista.frmAdmin" Collapsed="true">
+    <Position X="1.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACAMAJAQAACABIECAEg4AEAAATAAASEIAAA=</HashCode>
+      <FileName>Formularios Hijos\frmAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.frmArticulos" Collapsed="true">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4YAAAAAAAiACAJQAIBCABEECACRBAEACACAAAAAAAFA=</HashCode>
+      <FileName>Formularios Hijos\frmArticulos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.frmCategoria" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8IAAAAgAAiACAJAAABCABAECAAQBAECAACAQAAAAAEA=</HashCode>
+      <FileName>Formularios Hijos\frmCategoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.frmIngresos" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/7AAABAAAyACAJkCIAKCRAFCIABBAEAAECAAAAIIAHQ=</HashCode>
+      <FileName>Formularios Hijos\frmIngresos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.frmProveedores" Collapsed="true">
+    <Position X="3.5" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>4KAAgEgAAiACAJAgAACABEGCAAQRAEAgACAAAAIAAkA=</HashCode>
+      <FileName>Formularios Hijos\frmProveedores.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.frmCambioContr" Collapsed="true">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAEAAAACAAABgAAACAAAACAEAAAAAAAAAAAAQAAEA=</HashCode>
+      <FileName>frmCambioContr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.frmOlvido" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAJAAACAAkBAAAACQAAACAEAAAAAIAAABAAgAAAE=</HashCode>
+      <FileName>frmOlvido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.frmPregunta">
+    <Position X="0.5" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAAACIIABAAAACAAAACAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>frmPregunta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.frmVerificacion" Collapsed="true">
+    <Position X="3.75" Y="4" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAACAAEBACQACABJACAABAYABAAAAAAAAAAAA=</HashCode>
+      <FileName>frmVerificacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Login.frmAplicacion" Collapsed="true">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YATAAgApgqQIABQAECCABAACQAgAIBEABAAAAIiQMEA=</HashCode>
+      <FileName>frmAplicacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Login.frmLogin" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAEhAgAKQEARAAAACAAAACIAIAAAAQYSAABQggAEA=</HashCode>
+      <FileName>frmLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Login.frmRegister" Collapsed="true">
+    <Position X="3.75" Y="5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AADAApIgEqAAABCQEGCEAABCIEAQAAAAgCAAAQgQAEI=</HashCode>
+      <FileName>frmRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Login.Program" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.Properties.Resources" Collapsed="true">
+    <Position X="3.5" Y="6.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vista.Properties.Settings" Collapsed="true">
+    <Position X="6.75" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
