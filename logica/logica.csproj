@@ -59,6 +59,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Login\ValidarContraseña.cs" />
     <Compile Include="Login\validarUsuarioExistente.cs" />
+    <Compile Include="sistema\buscar\BuscarArticulosNombre.cs" />
+    <Compile Include="sistema\buscar\BuscarArticuloVentaCodigo.cs" />
+    <Compile Include="sistema\buscar\BuscarCategoria.cs" />
+    <Compile Include="sistema\buscar\BuscarClienteNumDocumento.cs" />
+    <Compile Include="sistema\buscar\BuscarPresentacionNombre.cs" />
+    <Compile Include="sistema\buscar\BuscarProvedorNumDocumento.cs" />
+    <Compile Include="sistema\buscar\BuscarProveedorNumDocumento.cs" />
+    <Compile Include="sistema\buscar\BuscarProveedorRazonSocial.cs" />
+    <Compile Include="sistema\buscar\BuscarTrabajadorNumDocumento.cs" />
+    <Compile Include="sistema\modificacion\DisminuirStock.cs" />
+    <Compile Include="sistema\modificacion\EditarArticulo.cs" />
+    <Compile Include="sistema\modificacion\EditarCliente.cs" />
+    <Compile Include="sistema\modificacion\EditarPresentacion.cs" />
+    <Compile Include="sistema\modificacion\EditarProveedor.cs" />
+    <Compile Include="sistema\modificacion\EditarUsers.cs" />
+    <Compile Include="sistema\modificacion\Editar_Categoria.cs" />
+    <Compile Include="sistema\modificacion\EliminarArticulo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\comun\comun.csproj">
@@ -76,6 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DiagramLogica.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sistema\alta\" />
+    <Folder Include="sistema\baja\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

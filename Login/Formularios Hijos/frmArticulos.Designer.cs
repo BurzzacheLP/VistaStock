@@ -60,6 +60,7 @@
             this.txtCodigoVenta = new System.Windows.Forms.TextBox();
             this.txtArticuloId = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBuscarCat = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.cboPresentacion = new System.Windows.Forms.ComboBox();
@@ -68,7 +69,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCategoriaId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnBuscarCat = new System.Windows.Forms.Button();
             this.tabIngresos.SuspendLayout();
             this.tabListado.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -404,6 +404,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categoria";
             // 
+            // btnBuscarCat
+            // 
+            this.btnBuscarCat.Location = new System.Drawing.Point(14, 177);
+            this.btnBuscarCat.Name = "btnBuscarCat";
+            this.btnBuscarCat.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarCat.TabIndex = 15;
+            this.btnBuscarCat.UseVisualStyleBackColor = true;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -471,14 +479,6 @@
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 0;
             this.label4.Text = "Id Categoria";
-            // 
-            // btnBuscarCat
-            // 
-            this.btnBuscarCat.Location = new System.Drawing.Point(14, 177);
-            this.btnBuscarCat.Name = "btnBuscarCat";
-            this.btnBuscarCat.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarCat.TabIndex = 15;
-            this.btnBuscarCat.UseVisualStyleBackColor = true;
             // 
             // frmArticulos
             // 

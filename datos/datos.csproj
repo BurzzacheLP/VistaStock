@@ -42,13 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ejecutar_procedimientos _almacenados.cs" />
     <Compile Include="Login\actualizar\ActualizarPreguntasSeg.cs" />
     <Compile Include="Login\actualizar\ActualizarConfigSis.cs" />
     <Compile Include="Login\actualizar\ActualizarDatosU.cs" />
     <Compile Include="Login\AgregarUsuario.cs" />
     <Compile Include="Login\actualizar\ActualizarCotraseñas.cs" />
     <Compile Include="Login\BorrarInfoPersonal.cs" />
-    <Compile Include="Login\conn.cs" />
+    <Compile Include="conn.cs" />
     <Compile Include="Login\consultar\ConsultarContraseñasRep.cs" />
     <Compile Include="Login\consultar\consultarlogueod.cs" />
     <Compile Include="Login\consultar\ConsultarPreguntasSeg.cs" />
@@ -57,6 +58,49 @@
     <Compile Include="Login\obtener\ObtenerConfigSis.cs" />
     <Compile Include="Login\obtener\obtenerDatosU.cs" />
     <Compile Include="Login\obtener\obtenerusuarios.cs" />
+    <Compile Include="procedimientos almacenados\buscarArticuloNombre.cs" />
+    <Compile Include="procedimientos almacenados\buscarArticuloVentaCodigo.cs" />
+    <Compile Include="procedimientos almacenados\buscarCategoria.cs" />
+    <Compile Include="procedimientos almacenados\buscarClienteNumDocumento.cs" />
+    <Compile Include="procedimientos almacenados\buscarPresentacionNombre.cs" />
+    <Compile Include="procedimientos almacenados\buscarProveedorNumDocumento.cs" />
+    <Compile Include="procedimientos almacenados\buscarProveedorRazonSocial.cs" />
+    <Compile Include="procedimientos almacenados\buscarTrabajadorNumDocumento.cs" />
+    <Compile Include="procedimientos almacenados\disminuirStock.cs" />
+    <Compile Include="procedimientos almacenados\editarArticulo.cs" />
+    <Compile Include="procedimientos almacenados\editarCliente.cs" />
+    <Compile Include="procedimientos almacenados\editarPresentacion.cs" />
+    <Compile Include="procedimientos almacenados\editarProveedor.cs" />
+    <Compile Include="procedimientos almacenados\editarUsers.cs" />
+    <Compile Include="procedimientos almacenados\editar_categoria.cs" />
+    <Compile Include="procedimientos almacenados\eliminarArticulo.cs" />
+    <Compile Include="procedimientos almacenados\eliminarCategoria.cs" />
+    <Compile Include="procedimientos almacenados\eliminarCliente.cs" />
+    <Compile Include="procedimientos almacenados\eliminarPresentacion.cs" />
+    <Compile Include="procedimientos almacenados\eliminarProveedor.cs" />
+    <Compile Include="procedimientos almacenados\eliminarTrabajador.cs" />
+    <Compile Include="procedimientos almacenados\eliminarVenta.cs" />
+    <Compile Include="procedimientos almacenados\insertarArticulo.cs" />
+    <Compile Include="procedimientos almacenados\insertarCategoria.cs" />
+    <Compile Include="procedimientos almacenados\insertarCliente.cs" />
+    <Compile Include="procedimientos almacenados\insertarDetalleIngreso.cs" />
+    <Compile Include="procedimientos almacenados\insertarDetalleVenta.cs" />
+    <Compile Include="procedimientos almacenados\insertarIngreso.cs" />
+    <Compile Include="procedimientos almacenados\insertarPresentacion.cs" />
+    <Compile Include="procedimientos almacenados\insertarProveedor.cs" />
+    <Compile Include="procedimientos almacenados\insertarVenta.cs" />
+    <Compile Include="procedimientos almacenados\mostrarArticulo.cs" />
+    <Compile Include="procedimientos almacenados\mostrarCategoria.cs" />
+    <Compile Include="procedimientos almacenados\mostrarCliente.cs" />
+    <Compile Include="procedimientos almacenados\MostrarDetalleingreso.cs" />
+    <Compile Include="procedimientos almacenados\MostrarDetalleVenta.cs" />
+    <Compile Include="procedimientos almacenados\mostrarIngreso.cs" />
+    <Compile Include="procedimientos almacenados\mostrarPresentacion.cs" />
+    <Compile Include="procedimientos almacenados\mostrarProveedor.cs" />
+    <Compile Include="procedimientos almacenados\mostrarTrabajador.cs" />
+    <Compile Include="procedimientos almacenados\mostrarVenta.cs" />
+    <Compile Include="procedimientos almacenados\reporteFactura.cs" />
+    <Compile Include="procedimientos almacenados\stockArticulos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,5 +116,6 @@
   <ItemGroup>
     <None Include="DiagramDatos.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
