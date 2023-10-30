@@ -11,6 +11,8 @@ namespace datos.procedimientos_almacenados
     public class editarUsers
     {
         public bool EjecutarYDevolver(int userid, bool bloqueado,string username,string permiso, DateTime fechaFin)
+        { 
+            try
             {
                 ejecutar_procedimientos__almacenados ejecutar_Procedimientos__Almacenados = new ejecutar_procedimientos__almacenados();
 

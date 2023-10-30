@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 using datos;
 using datos.procedimientos_almacenados;
 
-namespace logica.sistema
+
+namespace logica.sistema.buscar
 {
     public class BuscarArticuloVentaCodigo
     {

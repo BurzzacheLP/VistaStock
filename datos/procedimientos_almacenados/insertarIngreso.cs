@@ -18,7 +18,7 @@ namespace datos.procedimientos_almacenados
 
                 SqlParameter[] parametros = new SqlParameter[]
                 {
-                     new SqlParameter("@UserID", SqlDbType.Int { Value = userid},
+                     new SqlParameter("@UserID", SqlDbType.Int ){ Value = userid},
                      new SqlParameter("@idproveedor", SqlDbType.Int) { Value = idproveedor},
                      new SqlParameter("@fecha", SqlDbType.Date) { Value = fecha},
                      new SqlParameter("@tipo_comprobante", SqlDbType.VarChar) { Value = tipocomprobante},

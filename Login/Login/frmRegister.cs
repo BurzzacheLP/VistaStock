@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using Vista.Controles;
 
 namespace Login
 {
@@ -24,25 +25,72 @@ namespace Login
 
         #endregion
 
-
         #region TxtBoxes
-        private void txtUser_Enter(object sender, EventArgs e)
-        {
-            txtUser.ForeColor = Color.FromArgb(90, 92, 230);
-            if (txtUser.Text == "Usuario123")
+    
+            #region TxtUser
+            private void txtUser_Enter(object sender, EventArgs e)
             {
-                txtUser.Clear();
+                cambiosControles.placeHolder_Set(txtUser, "Usuario123");
             }
-        }
 
+            private void txtUser_Leave(object sender, EventArgs e)
+            {
+                cambiosControles.placeHolder_Reset(txtUser, "Usuario123");
+            }
+
+            #endregion
+    
+            #region txtMail
         private void txtMail_Enter(object sender, EventArgs e)
         {
-            txtMail.ForeColor = Color.FromArgb(90, 92, 230);
-            if (txtMail.Text == "correo@mail.com")
-            {
-                txtMail.Clear();
-            }
+            cambiosControles.placeHolder_Set(txtTelefono, "correo@mail.com");
         }
+
+        private void txtMail_Leave(object sender, EventArgs e)
+        {
+            cambiosControles.placeHolder_Reset(txtMail, "correo@gmail.com");
+        }
+
+        #endregion
+    
+            #region txtNombre
+            private void txtNombre_Enter(object sender, EventArgs e)
+            {
+                cambiosControles.placeHolder_Set(txtNombre, "Roberto Gomez");
+            }
+    
+            private void txtNombre_Leave(object sender, EventArgs e)
+            {
+                cambiosControles.placeHolder_Reset(txtNombre, "Roberto Gomez");
+            }
+            #endregion
+    
+    
+            #region txtDNI
+            private void txtDNI_Enter(object sender, EventArgs e)
+            {
+                cambiosControles.placeHolder_Set(txtDNI, "69.420.911");
+            }
+    
+            private void txtDNI_Leave(object sender, EventArgs e)
+            { 
+                cambiosControles.placeHolder_Reset(txtDNI, "69.420.911");               
+            }
+    
+            #endregion
+    
+            #region txtTelefono
+            private void txtTelefono_Enter(object sender, EventArgs e)
+            {
+                cambiosControles.placeHolder_Set(txtTelefono, "11 4206 9911");
+            }
+    
+    
+            private void txtTelefono_Leave(object sender, EventArgs e)
+            {
+                cambiosControles.placeHolder_Reset(txtTelefono, "11 4206 9911");
+            }
+            #endregion
 
         #endregion
 
@@ -70,10 +118,14 @@ namespace Login
 
         private void btnAbrirLogin_Click(object sender, EventArgs e)
         {
-
             this.Hide();
             frmLogin login = new frmLogin();
             login.Show();
+        }
+
+        private void ob(object sender, EventArgs e)
+        {
+
         }
     }
 }

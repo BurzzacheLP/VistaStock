@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using logica;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Vista
@@ -28,13 +22,18 @@ namespace Vista
 
         private void setArticulo(string idarticulo, string nombre)
         {
-            this.;
+           
         }
 
 
         public frmIngresos()
         {
             InitializeComponent();
+        }
+
+        private void btnBuscar_Click(object sender, System.EventArgs e)
+        {
+            // Hacer que una vez que se apliquen los filtros se carguen los datos del data grid
         }
     }
 }
