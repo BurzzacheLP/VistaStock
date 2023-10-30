@@ -23,7 +23,7 @@ namespace servicios
                 SmtpClient client = new SmtpClient("smtp.gmail.com")
                 {
                     Port = 587,
-                    Credentials = new NetworkCredential(from, "edebpdfyzvhnueey"),
+                    Credentials = new NetworkCredential(from, "iixx vohp zfru suof"),
                     EnableSsl = true,
                 };
                 client.Send(mail);

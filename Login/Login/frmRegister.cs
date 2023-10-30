@@ -1,4 +1,6 @@
-﻿using System;
+﻿using logica;
+using servicios;
+using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -74,6 +76,21 @@ namespace Login
             this.Hide();
             frmLogin login = new frmLogin();
             login.Show();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            CrearUsuario crear=new CrearUsuario();
+
+            if(crear.crear(txtUser.Text, PasswordEncryptor.EncryptPassword(crearContraseña.ArmarCadena(8)), textBox4.Text, txtMail.Text, textBox6.Text, comboBox1.Text, DateTime.Today, DateTime.Today.AddYears(1),"Banfield"))
+            {
+                MessageBox.Show("creado correctamente");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             
         }
     }
 }

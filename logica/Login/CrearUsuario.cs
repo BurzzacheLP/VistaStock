@@ -10,12 +10,12 @@ namespace logica
 {
     public class CrearUsuario
     {
-        public string permiso = "persona";
-        public bool crear (string username, string password, string nombre, string gmail, string numeroTelefono, string tipoTelefono, DateTime fechaInicio, DateTime fechaFin)
+        public string permiso = "admin";
+        public bool crear (string username, string password, string nombre, string gmail, string numeroTelefono, string tipoTelefono, DateTime fechaInicio, DateTime fechaFin,string localidad)
         {
        
             AgregarUsuario agregarUsuario = new AgregarUsuario();
-            if( agregarUsuario.nuevo(username, PasswordEncryptor.EncryptPassword(password)+PasswordEncryptor.EncryptPassword(username), nombre, gmail, numeroTelefono, tipoTelefono, fechaInicio, fechaFin, permiso)==true)
+            if( agregarUsuario.nuevo(username, PasswordEncryptor.EncryptPassword(password)+PasswordEncryptor.EncryptPassword(username), nombre, gmail, numeroTelefono, tipoTelefono, fechaInicio, fechaFin, permiso,localidad)==true)
             {
                 ArmarMail.Asunto = "Contraseña";
                 ArmarMail.DireccionCorreo = gmail;

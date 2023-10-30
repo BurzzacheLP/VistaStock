@@ -8,7 +8,7 @@ namespace datos
 {
     public class AgregarUsuario : conn
     {
-        public bool nuevo(string username, string password, string nombre, string gmail, string numeroTelefono, string tipoTelefono, DateTime fechaInicio, DateTime fechaFin, string permiso)
+        public bool nuevo(string username, string password, string nombre, string gmail, string numeroTelefono, string tipoTelefono, DateTime fechaInicio, DateTime fechaFin, string permiso, string localidad)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace datos
                     command.Parameters.AddWithValue("@FechaInicio", fechaInicio);
                     command.Parameters.AddWithValue("@FechaFin", fechaFin);
                     command.Parameters.AddWithValue("@Permiso", permiso);
-
+                    command.Parameters.AddWithValue("@localidad", localidad);
 
 
                     command.ExecuteNonQuery();
