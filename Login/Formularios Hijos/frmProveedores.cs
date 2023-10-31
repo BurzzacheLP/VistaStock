@@ -17,7 +17,7 @@ namespace Vista
         {
             InitializeComponent();
             
-            dataGridListado.DataSource = 
+             
         }
 
         
