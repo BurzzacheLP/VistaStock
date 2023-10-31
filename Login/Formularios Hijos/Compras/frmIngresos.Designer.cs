@@ -666,7 +666,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmIngresos";
-            this.Text = "Ingresos";
+            this.Text = "Compras";
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);

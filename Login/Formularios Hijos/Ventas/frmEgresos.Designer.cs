@@ -660,7 +660,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEgresos";
-            this.Text = "frmEgresos";
+            this.Text = "Ventas";
             this.Load += new System.EventHandler(this.frmEgresos_Load);
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);

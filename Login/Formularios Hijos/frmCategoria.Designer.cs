@@ -341,7 +341,7 @@
             this.Controls.Add(this.tabIngresos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCategoria";
-            this.Text = "frmCategoria";
+            this.Text = "Categorias";
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);
             this.tabListado.PerformLayout();

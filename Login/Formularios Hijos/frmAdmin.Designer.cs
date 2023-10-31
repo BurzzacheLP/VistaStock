@@ -368,7 +368,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAdmin";
-            this.Text = "frmAdmin";
+            this.Text = "Panel de Administrador";
             this.Load += new System.EventHandler(this.frmAdmin_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

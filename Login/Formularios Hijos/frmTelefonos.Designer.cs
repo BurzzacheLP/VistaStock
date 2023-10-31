@@ -397,6 +397,7 @@
             this.Controls.Add(this.tabIngresos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTelefonos";
+            this.Text = "Telefonos";
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);
             this.tabListado.PerformLayout();

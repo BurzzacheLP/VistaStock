@@ -117,7 +117,7 @@
             this.Controls.Add(this.lblRespuestaState);
             this.Controls.Add(this.label1);
             this.Name = "frmVerificacion";
-            this.Text = "frmVerificacion";
+            this.Text = "Verificar Codigo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

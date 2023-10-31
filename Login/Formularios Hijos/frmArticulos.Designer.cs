@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArticulos));
             this.tabIngresos = new System.Windows.Forms.TabControl();
             this.tabListado = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -42,6 +44,9 @@
             this.checkBoxEliminar = new System.Windows.Forms.CheckBox();
             this.dataGridListado = new System.Windows.Forms.DataGridView();
             this.tabMantenimiento = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBuscarCategoria = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -58,27 +63,22 @@
             this.txtArticuloId = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboPresentacion = new System.Windows.Forms.ComboBox();
-            this.btnBuscarCategoria = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCategoriaId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabIngresos.SuspendLayout();
             this.tabListado.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListado)).BeginInit();
             this.tabMantenimiento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabIngresos
@@ -107,6 +107,23 @@
             this.tabListado.Size = new System.Drawing.Size(903, 460);
             this.tabListado.TabIndex = 0;
             this.tabListado.Text = "Listado";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label9.Location = new System.Drawing.Point(126, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Id del Aticulo";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(129, 41);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 5;
             // 
             // label7
             // 
@@ -228,6 +245,33 @@
             this.tabMantenimiento.Size = new System.Drawing.Size(903, 460);
             this.tabMantenimiento.TabIndex = 1;
             this.tabMantenimiento.Text = "Mantenimiento";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label3.Location = new System.Drawing.Point(498, 194);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Buscar Categoria";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(451, 233);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(335, 198);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // btnBuscarCategoria
+            // 
+            this.btnBuscarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCategoria.Image")));
+            this.btnBuscarCategoria.Location = new System.Drawing.Point(453, 180);
+            this.btnBuscarCategoria.Name = "btnBuscarCategoria";
+            this.btnBuscarCategoria.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarCategoria.TabIndex = 8;
+            this.btnBuscarCategoria.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -384,15 +428,6 @@
             this.cboPresentacion.Size = new System.Drawing.Size(100, 21);
             this.cboPresentacion.TabIndex = 7;
             // 
-            // btnBuscarCategoria
-            // 
-            this.btnBuscarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCategoria.Image")));
-            this.btnBuscarCategoria.Location = new System.Drawing.Point(453, 180);
-            this.btnBuscarCategoria.Name = "btnBuscarCategoria";
-            this.btnBuscarCategoria.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarCategoria.TabIndex = 8;
-            this.btnBuscarCategoria.UseVisualStyleBackColor = true;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -446,41 +481,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Articulos";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(451, 233);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(335, 198);
-            this.dataGridView1.TabIndex = 11;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.label3.Location = new System.Drawing.Point(498, 194);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Buscar Categoria";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.label9.Location = new System.Drawing.Point(126, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 13);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Id del Aticulo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(129, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
-            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -491,7 +491,7 @@
             this.Controls.Add(this.tabIngresos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmArticulos";
-            this.Text = "frmArticulos";
+            this.Text = "Articulos";
             this.Load += new System.EventHandler(this.frmArticulos_Load);
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);
@@ -502,12 +502,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListado)).EndInit();
             this.tabMantenimiento.ResumeLayout(false);
             this.tabMantenimiento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

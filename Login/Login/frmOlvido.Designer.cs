@@ -142,7 +142,7 @@
             this.Controls.Add(this.txtUser);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.Name = "frmOlvido";
-            this.Text = "frmOlvido";
+            this.Text = "Restablecer Contraseña";
             this.ResumeLayout(false);
             this.PerformLayout();
 
