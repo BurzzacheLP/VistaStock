@@ -174,9 +174,8 @@ namespace Login
                             frmApp.Show();
                             break;
 
-                        case "empleado1":
-                        case "empleado2":
-                        case "empleado3":
+                        case "compras":                        
+                        case "ventas":
                             frmAplicacion Apliacion = new frmAplicacion();
                             Apliacion.Show();
                             break;
@@ -193,6 +192,11 @@ namespace Login
                     lblErrorUsr.Text = "Nombre de Usuario Inexistente";
                 }
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

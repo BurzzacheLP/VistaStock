@@ -40,12 +40,12 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.cboBuscar = new System.Windows.Forms.ComboBox();
+            this.cboTipoDni = new System.Windows.Forms.ComboBox();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.checkBoxEliminar = new System.Windows.Forms.CheckBox();
             this.dataGridListado = new System.Windows.Forms.DataGridView();
             this.tabMantenimiento = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridMantenimiento = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -76,7 +76,7 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListado)).BeginInit();
             this.tabMantenimiento.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridMantenimiento)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -158,6 +158,7 @@
             this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnAnular
             // 
@@ -175,7 +176,7 @@
             // 
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.cboBuscar);
+            this.groupBox4.Controls.Add(this.cboTipoDni);
             this.groupBox4.Controls.Add(this.txtBuscar);
             this.groupBox4.Controls.Add(this.checkBoxEliminar);
             this.groupBox4.Location = new System.Drawing.Point(6, 6);
@@ -204,18 +205,18 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "Tipo Documento";
             // 
-            // cboBuscar
+            // cboTipoDni
             // 
-            this.cboBuscar.FormattingEnabled = true;
-            this.cboBuscar.Items.AddRange(new object[] {
+            this.cboTipoDni.FormattingEnabled = true;
+            this.cboTipoDni.Items.AddRange(new object[] {
             "DNI",
             "Pasaporte",
             "RUC",
             "No sabe / No Contesta"});
-            this.cboBuscar.Location = new System.Drawing.Point(9, 28);
-            this.cboBuscar.Name = "cboBuscar";
-            this.cboBuscar.Size = new System.Drawing.Size(100, 21);
-            this.cboBuscar.TabIndex = 10;
+            this.cboTipoDni.Location = new System.Drawing.Point(9, 28);
+            this.cboTipoDni.Name = "cboTipoDni";
+            this.cboTipoDni.Size = new System.Drawing.Size(100, 21);
+            this.cboTipoDni.TabIndex = 10;
             // 
             // txtBuscar
             // 
@@ -250,7 +251,7 @@
             // tabMantenimiento
             // 
             this.tabMantenimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabMantenimiento.Controls.Add(this.dataGridView1);
+            this.tabMantenimiento.Controls.Add(this.dataGridMantenimiento);
             this.tabMantenimiento.Controls.Add(this.groupBox3);
             this.tabMantenimiento.Controls.Add(this.groupBox2);
             this.tabMantenimiento.Location = new System.Drawing.Point(4, 22);
@@ -260,13 +261,13 @@
             this.tabMantenimiento.TabIndex = 1;
             this.tabMantenimiento.Text = "Mantenimiento";
             // 
-            // dataGridView1
+            // dataGridMantenimiento
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 198);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(799, 256);
-            this.dataGridView1.TabIndex = 23;
+            this.dataGridMantenimiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridMantenimiento.Location = new System.Drawing.Point(9, 163);
+            this.dataGridMantenimiento.Name = "dataGridMantenimiento";
+            this.dataGridMantenimiento.Size = new System.Drawing.Size(799, 289);
+            this.dataGridMantenimiento.TabIndex = 23;
             // 
             // groupBox3
             // 
@@ -340,7 +341,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.groupBox2.Location = new System.Drawing.Point(9, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(799, 187);
+            this.groupBox2.Size = new System.Drawing.Size(799, 152);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Proveedor";
@@ -510,7 +511,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmProveedores";
-            this.Text = "Proveedores";
+            this.Text = "frmProveedores";
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);
             this.tabListado.PerformLayout();
@@ -519,7 +520,7 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListado)).EndInit();
             this.tabMantenimiento.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridMantenimiento)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -554,7 +555,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtRazonSocial;
         private System.Windows.Forms.TextBox txtProveedorId;
-        private System.Windows.Forms.ComboBox cboBuscar;
+        private System.Windows.Forms.ComboBox cboTipoDni;
         private System.Windows.Forms.ComboBox cboSectorComercial;
         private System.Windows.Forms.ComboBox cboDocumentoTipo;
         private System.Windows.Forms.Label label8;
@@ -568,7 +569,7 @@
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridMantenimiento;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label14;
     }

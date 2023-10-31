@@ -23,7 +23,7 @@ namespace Vista
             dataGridView1.DataSource = creardt.crear();
             dataGridView1.AutoResizeColumns();
 
-            dateCaducidad.MinDate = DateTime.Today;
+            dateCaducidad.MinDate = DateTime.Today;       
 
             
 

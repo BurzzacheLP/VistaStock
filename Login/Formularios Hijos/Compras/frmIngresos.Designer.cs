@@ -156,6 +156,7 @@
             this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnAnular
             // 
@@ -262,9 +263,9 @@
             this.groupBox4.Controls.Add(this.btnNuevo);
             this.groupBox4.Controls.Add(this.btnGuardar);
             this.groupBox4.Controls.Add(this.btnEditar);
-            this.groupBox4.Location = new System.Drawing.Point(816, 177);
+            this.groupBox4.Location = new System.Drawing.Point(816, 178);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(74, 269);
+            this.groupBox4.Size = new System.Drawing.Size(74, 268);
             this.groupBox4.TabIndex = 21;
             this.groupBox4.TabStop = false;
             // 
@@ -352,7 +353,7 @@
             this.groupBox2.Controls.Add(this.txtArticuloName);
             this.groupBox2.Controls.Add(this.txtArticuloId);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.groupBox2.Location = new System.Drawing.Point(390, 6);
+            this.groupBox2.Location = new System.Drawing.Point(393, 6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(415, 166);
             this.groupBox2.TabIndex = 2;
@@ -648,9 +649,9 @@
             this.dataGridMantenimiento.AllowUserToAddRows = false;
             this.dataGridMantenimiento.AllowUserToDeleteRows = false;
             this.dataGridMantenimiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMantenimiento.Location = new System.Drawing.Point(9, 177);
+            this.dataGridMantenimiento.Location = new System.Drawing.Point(8, 178);
             this.dataGridMantenimiento.Name = "dataGridMantenimiento";
-            this.dataGridMantenimiento.Size = new System.Drawing.Size(797, 269);
+            this.dataGridMantenimiento.Size = new System.Drawing.Size(800, 268);
             this.dataGridMantenimiento.TabIndex = 0;
             // 
             // frmIngresos
@@ -666,6 +667,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmIngresos";
+            this.Text = "Ingresos";
             this.Text = "Compras";
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);

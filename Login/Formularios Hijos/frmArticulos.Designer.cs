@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArticulos));
+            this.label1 = new System.Windows.Forms.Label();
             this.tabIngresos = new System.Windows.Forms.TabControl();
             this.tabListado = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
@@ -62,6 +63,9 @@
             this.txtCodigoVenta = new System.Windows.Forms.TextBox();
             this.txtArticuloId = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBuscarCat = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.cboPresentacion = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
@@ -79,7 +83,19 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label1.Location = new System.Drawing.Point(12, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(278, 73);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Articulos";
             // 
             // tabIngresos
             // 
@@ -89,7 +105,7 @@
             this.tabIngresos.Name = "tabIngresos";
             this.tabIngresos.SelectedIndex = 0;
             this.tabIngresos.Size = new System.Drawing.Size(911, 486);
-            this.tabIngresos.TabIndex = 0;
+            this.tabIngresos.TabIndex = 4;
             // 
             // tabListado
             // 
@@ -334,7 +350,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.groupBox2.Location = new System.Drawing.Point(9, 8);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(415, 440);
+            this.groupBox2.Size = new System.Drawing.Size(220, 440);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Articulo";
@@ -342,7 +358,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(131, 20);
+            this.label14.Location = new System.Drawing.Point(6, 172);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(63, 13);
             this.label14.TabIndex = 19;
@@ -377,10 +393,10 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(134, 36);
+            this.txtDescripcion.Location = new System.Drawing.Point(9, 188);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(261, 389);
+            this.txtDescripcion.Size = new System.Drawing.Size(200, 238);
             this.txtDescripcion.TabIndex = 4;
             // 
             // txtNombre
@@ -406,6 +422,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnBuscarCat);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cboPresentacion);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cboCategoria);
@@ -413,12 +432,38 @@
             this.groupBox1.Controls.Add(this.txtCategoriaId);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.groupBox1.Location = new System.Drawing.Point(443, 8);
+            this.groupBox1.Location = new System.Drawing.Point(235, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(351, 439);
+            this.groupBox1.Size = new System.Drawing.Size(570, 439);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categoria";
+            // 
+            // btnBuscarCat
+            // 
+            this.btnBuscarCat.Location = new System.Drawing.Point(14, 177);
+            this.btnBuscarCat.Name = "btnBuscarCat";
+            this.btnBuscarCat.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarCat.TabIndex = 15;
+            this.btnBuscarCat.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 228);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(552, 198);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.label3.Location = new System.Drawing.Point(60, 191);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Buscar Categoria";
             // 
             // cboPresentacion
             // 
@@ -487,11 +532,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(935, 575);
+            this.Controls.Add(this.tabIngresos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabIngresos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmArticulos";
-            this.Text = "Articulos";
+            this.Text = "frmArticulos";
             this.Load += new System.EventHandler(this.frmArticulos_Load);
             this.tabIngresos.ResumeLayout(false);
             this.tabListado.ResumeLayout(false);
@@ -508,17 +554,34 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabIngresos;
         private System.Windows.Forms.TabPage tabListado;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnAnular;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtArticuloName;
+        private System.Windows.Forms.CheckBox checkBoxEliminar;
         private System.Windows.Forms.DataGridView dataGridListado;
         private System.Windows.Forms.TabPage tabMantenimiento;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
@@ -529,31 +592,15 @@
         private System.Windows.Forms.TextBox txtCodigoVenta;
         private System.Windows.Forms.TextBox txtArticuloId;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cboPresentacion;
+        private System.Windows.Forms.Button btnBuscarCategoria;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cboCategoria;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCategoriaId;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtArticuloName;
-        private System.Windows.Forms.CheckBox checkBoxEliminar;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Button btnAnular;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnBuscarCategoria;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cboPresentacion;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnBuscarCat;
     }
 }

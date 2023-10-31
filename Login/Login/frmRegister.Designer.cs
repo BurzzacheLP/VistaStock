@@ -45,15 +45,19 @@
             this.lblDniState = new System.Windows.Forms.Label();
             this.lblMailState = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblTelefonoState = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboTipoTel = new System.Windows.Forms.ComboBox();
+            this.Partido = new System.Windows.Forms.GroupBox();
+            this.cboPartido = new System.Windows.Forms.ComboBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.cboLocalidad = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.TopPanel.SuspendLayout();
@@ -65,6 +69,8 @@
             this.groupBox6.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.Partido.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -110,7 +116,7 @@
             this.btnAbrirLogin.Location = new System.Drawing.Point(6, 4);
             this.btnAbrirLogin.Name = "btnAbrirLogin";
             this.btnAbrirLogin.Size = new System.Drawing.Size(71, 15);
-            this.btnAbrirLogin.TabIndex = 17;
+            this.btnAbrirLogin.TabIndex = 8;
             this.btnAbrirLogin.Text = "Login";
             this.btnAbrirLogin.UseVisualStyleBackColor = true;
             this.btnAbrirLogin.Click += new System.EventHandler(this.btnAbrirLogin_Click);
@@ -123,7 +129,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(595, 136);
-            this.panel1.TabIndex = 12;
+            this.panel1.TabIndex = 121;
             // 
             // pictureBox2
             // 
@@ -143,7 +149,7 @@
             this.label1.Location = new System.Drawing.Point(247, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 25);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 120;
             this.label1.Text = "Register";
             // 
             // groupBox1
@@ -154,7 +160,7 @@
             this.groupBox1.Location = new System.Drawing.Point(22, 143);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(175, 57);
-            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabIndex = 100;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Usuario";
             // 
@@ -167,6 +173,7 @@
             this.txtUser.TabIndex = 1;
             this.txtUser.Text = "Usuario123";
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
+            this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
             // groupBox2
             // 
@@ -176,7 +183,7 @@
             this.groupBox2.Location = new System.Drawing.Point(303, 143);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(175, 57);
-            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabIndex = 101;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Correo";
             // 
@@ -186,39 +193,43 @@
             this.txtMail.Location = new System.Drawing.Point(6, 23);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(163, 22);
-            this.txtMail.TabIndex = 1;
+            this.txtMail.TabIndex = 4;
             this.txtMail.Text = "correo@mail.com";
             this.txtMail.Enter += new System.EventHandler(this.txtMail_Enter);
+            this.txtMail.Leave += new System.EventHandler(this.txtMail_Leave);
             // 
             // lblUserState
             // 
             this.lblUserState.AutoSize = true;
             this.lblUserState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(177)))), ((int)(((byte)(91)))));
-            this.lblUserState.Location = new System.Drawing.Point(204, 171);
+            this.lblUserState.Location = new System.Drawing.Point(203, 171);
             this.lblUserState.Name = "lblUserState";
             this.lblUserState.Size = new System.Drawing.Size(93, 13);
-            this.lblUserState.TabIndex = 15;
+            this.lblUserState.TabIndex = 112;
             this.lblUserState.Text = "Usuario disponible";
+            this.lblUserState.Visible = false;
             // 
             // lblNombreState
             // 
             this.lblNombreState.AutoSize = true;
             this.lblNombreState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(177)))), ((int)(((byte)(91)))));
-            this.lblNombreState.Location = new System.Drawing.Point(204, 245);
+            this.lblNombreState.Location = new System.Drawing.Point(203, 247);
             this.lblNombreState.Name = "lblNombreState";
             this.lblNombreState.Size = new System.Drawing.Size(76, 13);
-            this.lblNombreState.TabIndex = 16;
+            this.lblNombreState.TabIndex = 111;
             this.lblNombreState.Text = "Nombre Valido";
+            this.lblNombreState.Visible = false;
             // 
             // lblDniState
             // 
             this.lblDniState.AutoSize = true;
             this.lblDniState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(177)))), ((int)(((byte)(91)))));
-            this.lblDniState.Location = new System.Drawing.Point(485, 245);
+            this.lblDniState.Location = new System.Drawing.Point(485, 247);
             this.lblDniState.Name = "lblDniState";
             this.lblDniState.Size = new System.Drawing.Size(58, 13);
-            this.lblDniState.TabIndex = 20;
+            this.lblDniState.TabIndex = 115;
             this.lblDniState.Text = "DNI Valido";
+            this.lblDniState.Visible = false;
             // 
             // lblMailState
             // 
@@ -227,121 +238,180 @@
             this.lblMailState.Location = new System.Drawing.Point(485, 171);
             this.lblMailState.Name = "lblMailState";
             this.lblMailState.Size = new System.Drawing.Size(70, 13);
-            this.lblMailState.TabIndex = 19;
+            this.lblMailState.TabIndex = 113;
             this.lblMailState.Text = "Correo Valido";
+            this.lblMailState.Visible = false;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox3);
+            this.groupBox5.Controls.Add(this.txtDNI);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.groupBox5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox5.Location = new System.Drawing.Point(303, 217);
+            this.groupBox5.Location = new System.Drawing.Point(303, 219);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(175, 57);
-            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabIndex = 103;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "DNI";
             // 
-            // textBox3
+            // txtDNI
             // 
-            this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox3.Location = new System.Drawing.Point(6, 23);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 22);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.Text = "69.420.911";
+            this.txtDNI.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtDNI.Location = new System.Drawing.Point(6, 23);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(163, 22);
+            this.txtDNI.TabIndex = 5;
+            this.txtDNI.Text = "69.420.911";
+            this.txtDNI.Enter += new System.EventHandler(this.txtDNI_Enter);
+            this.txtDNI.Leave += new System.EventHandler(this.txtDNI_Leave);
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.textBox4);
+            this.groupBox6.Controls.Add(this.txtNombre);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.groupBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox6.Location = new System.Drawing.Point(22, 217);
+            this.groupBox6.Location = new System.Drawing.Point(22, 219);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(176, 57);
-            this.groupBox6.TabIndex = 17;
+            this.groupBox6.TabIndex = 102;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Nombre Completo";
             // 
-            // textBox4
+            // txtNombre
             // 
-            this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox4.Location = new System.Drawing.Point(6, 23);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(163, 22);
-            this.textBox4.TabIndex = 1;
-            this.textBox4.Text = "Roberto Gomez";
+            this.txtNombre.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtNombre.Location = new System.Drawing.Point(6, 23);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(163, 22);
+            this.txtNombre.TabIndex = 2;
+            this.txtNombre.Text = "Roberto Gomez";
+            this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
+            this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // lblTelefonoState
             // 
             this.lblTelefonoState.AutoSize = true;
             this.lblTelefonoState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(177)))), ((int)(((byte)(91)))));
-            this.lblTelefonoState.Location = new System.Drawing.Point(485, 319);
+            this.lblTelefonoState.Location = new System.Drawing.Point(485, 323);
             this.lblTelefonoState.Name = "lblTelefonoState";
             this.lblTelefonoState.Size = new System.Drawing.Size(81, 13);
-            this.lblTelefonoState.TabIndex = 19;
+            this.lblTelefonoState.TabIndex = 116;
             this.lblTelefonoState.Text = "Telefono Valido";
+            this.lblTelefonoState.Visible = false;
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.textBox6);
+            this.groupBox8.Controls.Add(this.txtTelefono);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.groupBox8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox8.Location = new System.Drawing.Point(303, 291);
+            this.groupBox8.Location = new System.Drawing.Point(303, 295);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(175, 57);
-            this.groupBox8.TabIndex = 17;
+            this.groupBox8.TabIndex = 105;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Nro Telefono";
             // 
-            // textBox6
+            // txtTelefono
             // 
-            this.textBox6.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox6.Location = new System.Drawing.Point(6, 23);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(163, 22);
-            this.textBox6.TabIndex = 1;
-            this.textBox6.Text = "+54 9 11 4206 9911";
+            this.txtTelefono.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtTelefono.Location = new System.Drawing.Point(6, 23);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(163, 22);
+            this.txtTelefono.TabIndex = 6;
+            this.txtTelefono.Text = "11 4206 9911";
+            this.txtTelefono.Enter += new System.EventHandler(this.txtTelefono_Enter);
+            this.txtTelefono.Leave += new System.EventHandler(this.txtTelefono_Leave);
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(22, 367);
+            this.btnRegister.Location = new System.Drawing.Point(23, 444);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
-            this.btnRegister.TabIndex = 21;
+            this.btnRegister.TabIndex = 7;
             this.btnRegister.Text = "Registrarse";
             this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnRegister.Click += new System.EventHandler(this.ob);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.cboTipoTel);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.groupBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox3.Location = new System.Drawing.Point(22, 291);
+            this.groupBox3.Location = new System.Drawing.Point(22, 295);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(175, 57);
-            this.groupBox3.TabIndex = 22;
+            this.groupBox3.TabIndex = 104;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tipo de Telefono";
             // 
-            // comboBox1
+            // cboTipoTel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboTipoTel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoTel.FormattingEnabled = true;
+            this.cboTipoTel.Items.AddRange(new object[] {
             "Fijo",
-            "Mobil"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 23);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(163, 24);
-            this.comboBox1.TabIndex = 24;
+            "Movil"});
+            this.cboTipoTel.Location = new System.Drawing.Point(6, 23);
+            this.cboTipoTel.Name = "cboTipoTel";
+            this.cboTipoTel.Size = new System.Drawing.Size(163, 24);
+            this.cboTipoTel.TabIndex = 3;
+            // 
+            // Partido
+            // 
+            this.Partido.Controls.Add(this.cboPartido);
+            this.Partido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.Partido.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Partido.Location = new System.Drawing.Point(23, 371);
+            this.Partido.Name = "Partido";
+            this.Partido.Size = new System.Drawing.Size(175, 57);
+            this.Partido.TabIndex = 105;
+            this.Partido.TabStop = false;
+            this.Partido.Text = "Partido";
+            // 
+            // cboPartido
+            // 
+            this.cboPartido.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPartido.FormattingEnabled = true;
+            this.cboPartido.Items.AddRange(new object[] {
+            "Fijo",
+            "Movil"});
+            this.cboPartido.Location = new System.Drawing.Point(6, 21);
+            this.cboPartido.Name = "cboPartido";
+            this.cboPartido.Size = new System.Drawing.Size(163, 24);
+            this.cboPartido.TabIndex = 3;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.cboLocalidad);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.groupBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox4.Location = new System.Drawing.Point(303, 371);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(175, 57);
+            this.groupBox4.TabIndex = 106;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Localidad";
+            // 
+            // cboLocalidad
+            // 
+            this.cboLocalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLocalidad.FormattingEnabled = true;
+            this.cboLocalidad.Items.AddRange(new object[] {
+            "Fijo",
+            "Movil"});
+            this.cboLocalidad.Location = new System.Drawing.Point(6, 21);
+            this.cboLocalidad.Name = "cboLocalidad";
+            this.cboLocalidad.Size = new System.Drawing.Size(163, 24);
+            this.cboLocalidad.TabIndex = 3;
             // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(595, 402);
+            this.ClientSize = new System.Drawing.Size(595, 481);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.Partido);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lblDniState);
@@ -376,6 +446,8 @@
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.Partido.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,14 +471,18 @@
         private System.Windows.Forms.Label lblDniState;
         private System.Windows.Forms.Label lblMailState;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblTelefonoState;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboTipoTel;
+        private System.Windows.Forms.GroupBox Partido;
+        private System.Windows.Forms.ComboBox cboPartido;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox cboLocalidad;
     }
 }

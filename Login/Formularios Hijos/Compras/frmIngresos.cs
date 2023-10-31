@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using logica;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -25,7 +23,7 @@ namespace Vista
             this.txtProveedorId.Text = idproveedor;
             this.txtProveedorName.Text = nombre;
         }
-
+        
         private void setArticulo(string idarticulo, string nombre)
         {
            // this.txt
@@ -35,6 +33,11 @@ namespace Vista
         public frmIngresos()
         {
             InitializeComponent();
+        }
+
+        private void btnBuscar_Click(object sender, System.EventArgs e)
+        {
+            // Hacer que una vez que se apliquen los filtros se carguen los datos del data grid
         }
     }
 }

@@ -121,7 +121,7 @@
   <data name="label1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAA4hJREFUaEPt2UnMDGkcx3H72A4YYwsOElsmEhGHuXAkEi5ukhlnCU4OBIn1QCax
+        DAAACwwBP0AiyAAAA4hJREFUaEPt2UnMDGkcx3H72A4YYwsOElsmEhGHuXAkEi5ukhlnCU4OBIn1QCax
         S5DMhDi5cCFIJDPCHOzbUeINscd2McxY2vcr/Ujp9/++pN/u6ioh+UT89bP8qqqfqqe6W6VS+aaExTIL
         i2UWFsssLJZZWCyzsKi2trZaPTAd63AUJ3G8Sez7GNZgNNrNJ5qzwqKCToZiJf7GfTzGwyax7wf4C4sw
         GJ/NJ5qzwqJqOuiFFXiNSs7+xwb0x6c5RXNWWFSm8UD8hrtIg9zCPzhT/bvRTuMC0ngeSOfgge1yoNm4
@@ -195,6 +195,26 @@
         kdEJgDAMBTuKoziKmziKozhKR9EcNBJCv5r0Q+jBo7TCpX2WRWNr6xQuySOpkpODTG4JcpvUIVTjB/CS
         MNSivfeGhP6J1sJNe0MYPozv3A/h+zD25ofbhyoBK9s5aKu+JKUWK7edp9Wy5B//lYOKpshBZZAuBxXa
         pMlhqnzRoZQXa69fnPE+6TIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnBuscar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAALdJREFUSEvt
+        lN0JgDAMhDuKo7iZoziKoziK5gMPirRNU33swWEx5C4/pWniCxbjZjyM58PduBo/A+GrQoyIDyMX50zF
+        dKOOFKObMBCTQG0UGBGnk/C4qIpkbwTqhP2EQFUkUmULeRchkAQ9DBvQMonebLWrsIF24N0Q7SB8k3pu
+        iKqH3q6KUHWYcJYRYoopPmTwFioRcX2HTACJzFiLV0f8h7+YtDBNQshNwu9TLzBB3HsFJnKkdANx51WD
+        Di9IEgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnAnular.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAASNJREFUSEvl
+        ktsNwkAMBFMKpVAKnVAKpVAKpcBNxEjGsfPgD7GSldOdvbu2M/0FziOuI+4jniMeI27vO96+xmmEpGuB
+        ILmHgLtIEN1CxvkygreYswuRfKsIsSP5c4HJR+ZrHZ2s1jlznVDYzZg7lu2bnZBfgpnmBM7eRRHOmuEL
+        4l3ZhQ4QEhRlkUgUzQA5yl3QbhYAWaQjBzjnza4+IAmEGVGkIwfkte9bAjqXoMoD5izQLSiSQ6yRSsQf
+        hXEvUC0okwPuOhEFyiW7IImAi493IIrEhWom/ygzoltb9K6Cb47UCXT5MyjScemigd0TeYcLOEdEylkm
+        6JzYkz93EYvsRme8cybHPewmj3DGEnSBCLlfQbd0wOIhIxDG8ea8fx3T9AJWiZk7mZqneAAAAABJRU5E
+        rkJggg==
 </value>
   </data>
   <data name="btnQuitar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

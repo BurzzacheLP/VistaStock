@@ -6,23 +6,28 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using logica.sistema;
 using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class frmTelefonos : Form
+    public partial class frmProveedores : Form
     {
-        public frmTelefonos()
+        public frmProveedores()
         {
             InitializeComponent();
+            
+            dataGridListado.DataSource = 
         }
 
-        // Reemplazar por la clase de logica correspondiente
-        DataTable DTTelefonos = new DataTable();
+        
+        
 
-        private void frmTelefonos_Load(object sender, EventArgs e)
+        
+
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-            dataGridListado.DataSource = DTTelefonos;
+                
         }
     }
 }
