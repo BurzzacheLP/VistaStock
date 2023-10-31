@@ -65,7 +65,6 @@ namespace Login
             }
             #endregion
     
-    
             #region txtDNI
             private void txtDNI_Enter(object sender, EventArgs e)
             {
