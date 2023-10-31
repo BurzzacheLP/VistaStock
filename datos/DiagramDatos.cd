@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="datos.ActualizarConfigSis" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>actualizar\ActualizarConfigSis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.ActualizarContraseñas" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>actualizar\ActualizarCotraseñas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.ActualizarDatosU" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>actualizar\ActualizarDatosU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.ActualizarPreguntasSeg" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>actualizar\ActualizarPreguntasSeg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.AgregarUsuario" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>AgregarUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.BorrarInfoPersonal" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BorrarInfoPersonal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.conn" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>conn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.consultarlogueod" Collapsed="true">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>consultar\consultarlogueod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.ConsultarPreguntasSeg" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>consultar\ConsultarPreguntasSeg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.consultarUsuario" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>consultar\consultarUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.ObtenerConfigSis" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>obtener\ObtenerConfigSis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.obtenerDatosU" Collapsed="true">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>obtener\obtenerDatosU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.ObtenerPreguntaSeg" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>obtener\ObtenerPreguntaSeg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.obtenerusuarios" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>obtener\obtenerusuarios.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="datos.consultar.ConsultarContraseñasRep" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>consultar\ConsultarContraseñasRep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

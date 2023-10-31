@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +47,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,17 +64,77 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmGridUsuarios.cs">
+    <Compile Include="Formularios Hijos\frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGridUsuarios.Designer.cs">
-      <DependentUpon>frmGridUsuarios.cs</DependentUpon>
+    <Compile Include="Formularios Hijos\frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Formularios Hijos\frmArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="Formularios Hijos\frmArticulos.Designer.cs">
+      <DependentUpon>frmArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios Hijos\frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Hijos\frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios Hijos\Ventas\frmEgresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Hijos\Ventas\frmEgresos.Designer.cs">
+      <DependentUpon>frmEgresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios Hijos\frmTelefonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Hijos\frmTelefonos.Designer.cs">
+      <DependentUpon>frmTelefonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios Hijos\Compras\frmIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Hijos\Compras\frmIngresos.Designer.cs">
+      <DependentUpon>frmIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmCambioContr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmCambioContr.Designer.cs">
+      <DependentUpon>frmCambioContr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmOlvido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmOlvido.Designer.cs">
+      <DependentUpon>frmOlvido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios Hijos\frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Hijos\frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmPregunta.Designer.cs">
+      <DependentUpon>frmPregunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmVerificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmVerificacion.Designer.cs">
+      <DependentUpon>frmVerificacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="frmAplicacion.cs">
@@ -66,20 +144,50 @@
       <DependentUpon>frmAplicacion.cs</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="frmRegister.cs">
+    <Compile Include="Login\frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegister.Designer.cs">
+    <Compile Include="Login\frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmGridUsuarios.resx">
-      <DependentUpon>frmGridUsuarios.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios Hijos\frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="Formularios Hijos\frmArticulos.resx">
+      <DependentUpon>frmArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Hijos\frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Hijos\Ventas\frmEgresos.resx">
+      <DependentUpon>frmEgresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Hijos\frmTelefonos.resx">
+      <DependentUpon>frmTelefonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicacion.resx">
       <DependentUpon>frmAplicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Hijos\Compras\frmIngresos.resx">
+      <DependentUpon>frmIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmCambioContr.resx">
+      <DependentUpon>frmCambioContr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmOlvido.resx">
+      <DependentUpon>frmOlvido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Hijos\frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmPregunta.resx">
+      <DependentUpon>frmPregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmVerificacion.resx">
+      <DependentUpon>frmVerificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,9 +199,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="frmRegister.resx">
+    <EmbeddedResource Include="Login\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DiagramVista.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,6 +215,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\comun\comun.csproj">
+      <Project>{ce9e512b-88f1-48b9-8ac2-8e515fb87444}</Project>
+      <Name>comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\logica\logica.csproj">
+      <Project>{1537425e-3b43-462c-8419-64af5177466c}</Project>
+      <Name>logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\servicios\servicios.csproj">
+      <Project>{a57eb5b3-4315-40a6-857b-c93f01777ec9}</Project>
+      <Name>servicios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
