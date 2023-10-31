@@ -1,6 +1,4 @@
-﻿using logica;
-using servicios;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -39,7 +37,6 @@ namespace Login
             {
                 cambiosControles.placeHolder_Reset(txtUser, "Usuario123");
             }
-        }
 
             #endregion
     
@@ -121,7 +118,6 @@ namespace Login
 
         private void btnAbrirLogin_Click(object sender, EventArgs e)
         {
-
             this.Hide();
             frmLogin login = new frmLogin();
             login.Show();

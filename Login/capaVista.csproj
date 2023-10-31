@@ -145,12 +145,6 @@
       <DependentUpon>frmAplicacion.cs</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Login\frmRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login\frmRegister.Designer.cs">
-      <DependentUpon>frmRegister.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Formularios Hijos\frmAdmin.resx">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,9 +194,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Login\frmRegister.resx">
-      <DependentUpon>frmRegister.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="DiagramVista.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
