@@ -264,9 +264,9 @@
             // dataGridMantenimiento
             // 
             this.dataGridMantenimiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMantenimiento.Location = new System.Drawing.Point(9, 163);
+            this.dataGridMantenimiento.Location = new System.Drawing.Point(9, 189);
             this.dataGridMantenimiento.Name = "dataGridMantenimiento";
-            this.dataGridMantenimiento.Size = new System.Drawing.Size(799, 289);
+            this.dataGridMantenimiento.Size = new System.Drawing.Size(799, 265);
             this.dataGridMantenimiento.TabIndex = 23;
             // 
             // groupBox3
@@ -316,7 +316,6 @@
             this.btnEditar.Size = new System.Drawing.Size(40, 40);
             this.btnEditar.TabIndex = 22;
             this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // groupBox2
             // 
@@ -341,7 +340,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.groupBox2.Location = new System.Drawing.Point(9, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(799, 152);
+            this.groupBox2.Size = new System.Drawing.Size(799, 178);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Proveedor";
