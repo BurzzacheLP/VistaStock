@@ -17,5 +17,12 @@ namespace Vista
             InitializeComponent();
         }
 
+        // Reemplazar por la clase de logica correspondiente
+        DataTable DTTelefonos = new DataTable();
+
+        private void frmTelefonos_Load(object sender, EventArgs e)
+        {
+            dataGridListado.DataSource = DTTelefonos;
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using logica.sistema;
 using System.Windows.Forms;
 
 namespace Vista
@@ -15,7 +16,18 @@ namespace Vista
         public frmProveedores()
         {
             InitializeComponent();
+            
+            dataGridListado.DataSource = 
         }
+
         
+        
+
+        
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+                
+        }
     }
 }

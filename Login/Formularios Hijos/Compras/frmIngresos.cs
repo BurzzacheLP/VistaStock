@@ -14,16 +14,7 @@ namespace Vista
         private decimal totalPagado = 0;
 
 
-        private void setProveedor(string idproveedor, string nombre)
-        {
-            this.txtProveedorId.Text = idproveedor;
-            this.txtProveedorName.Text = nombre;
-        }
-
-        private void setArticulo(string idarticulo, string nombre)
-        {
-           
-        }
+        
 
 
         public frmIngresos()

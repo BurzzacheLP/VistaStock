@@ -9,7 +9,7 @@ namespace datos
 {
     public abstract class conn
     {
-        private static string cadena = "Server=LOCALHOST\\SQLEXPRESS;Database=dbventas;Integrated Security=True;";
+        private static string cadena = "Server=DESKTOP-46FLGT2\\LOCALHOST;Database=dbventas;Integrated Security=True;";
 
 
         public SqlConnection crear()
